@@ -1,0 +1,1450 @@
+{
+  "schema": 1,
+  "id": "story-26f022",
+  "slug": "the-26-factor",
+  "slugLocked": true,
+  "meta": {
+    "title": "The '26' factor",
+    "description": "Nepal’s floods join a grim history of disasters that struck on the 26th — twenty-two of them since 1930, and about 330,000 dead.",
+    "author": "PTI, New Delhi",
+    "date": "31 August 2026",
+    "twitterHandle": "",
+    "socialImage": "a-26f003"
+  },
+  "themePreset": "noir",
+  "themeOverrides": {
+    "fontHeading": "'Newsreader', Georgia, serif",
+    "fontBody": "'IBM Plex Sans', Helvetica, Arial, sans-serif",
+    "fontUi": "'IBM Plex Sans', Helvetica, Arial, sans-serif",
+    "sizeBase": "19px",
+    "scaleH1": "3.9",
+    "scaleH2": "2.0",
+    "scaleH3": "1.25",
+    "weightHead": "600",
+    "trackingHead": "-0.015em",
+    "leadingBody": "1.68",
+    "bg": "#111013",
+    "bgAlt": "#1a181d",
+    "fg": "#e8e6e1",
+    "fgMuted": "#8b8781",
+    "accent": "#d9a441",
+    "rule": "rgba(232,230,225,0.16)",
+    "boxBg": "rgba(19,18,22,0.90)",
+    "boxFg": "#e8e6e1",
+    "boxBorder": "1px solid rgba(232,230,225,0.10)",
+    "boxBlur": "10px",
+    "boxRadius": "5px",
+    "boxShadow": "0 10px 44px rgba(0,0,0,0.55)",
+    "stepIdleOpacity": "0.3",
+    "stepWidth": "25rem",
+    "measure": "34rem"
+  },
+  "footer": {
+    "enabled": true,
+    "text": "**Source:** Press Trust of India, 31 August 2026.\n\nDeath tolls are as reported in that copy; several are estimates and some remain provisional. Map positions are approximate. The base map is satellite imagery, which draws no international boundaries.\n\n**Photographs**\n\n- pnepalensis — *nepal-valley* — CC BY-SA 4.0\n- U.S. Navy photo by Photographer's Mate 2nd Class Philip A. McDaniel — *tsunami-aceh* — Public domain\n- Aliafsah — *bam-citadel* — CC BY-SA 4.0\n- Jugnu — *gujarat-kutch* — CC BY-SA 4.0\n- Unknown authorUnknown author — *skopje-ruins* — Public domain\n- Matti Paavonen — *chernobyl* — CC BY-SA 3.0\n- Trakesht — *mumbai-taj* — CC BY-SA 3.0\n- Michael Gunther — *prambanan* — CC BY-SA 4.0\n- U.S. Marine Corps photo by Sgt. Isaiah Campbell/U.S. Central Command P — *kabul-airport* — Public domain\n\nImagery © Esri, Maxar, Earthstar Geographics. Charts and graphics original, built in Scrollytelling Studio."
+  },
+  "blocks": [
+    {
+      "id": "b-26f00h",
+      "type": "cover",
+      "kicker": "Press Trust of India",
+      "title": "The '26' factor",
+      "standfirst": "Nepal’s flash floods are the latest addition to a grim history of disasters that struck on the 26th — twenty-two of them, across ninety-six years.",
+      "author": "PTI, New Delhi",
+      "date": "31 August 2026",
+      "media": {
+        "kind": "image",
+        "src": "a-26f008",
+        "alt": "The Langtang valley in Rasuwa district, Nepal."
+      },
+      "scrim": 0.82,
+      "focal": "50% 45%",
+      "cue": true,
+      "height": "96vh"
+    },
+    {
+      "id": "b-26f00i",
+      "type": "text",
+      "lead": true,
+      "dropcap": true,
+      "wide": false,
+      "body": "Is it the jinx of 26? The catastrophic flash floods that tore through Nepal on August 26 are the latest addition to a grim history of disasters that struck on the 26th — right from the 1939 earthquake in Turkey that killed more than 32,700 people to the 2004 Boxing Day tsunami in which 228,000 people were killed, missing and presumed dead.\n\nAnd it is not just about natural disasters. The date is also when the Mumbai terror siege began on the night of November 26, 2008, and of the Chernobyl nuclear accident on April 26, 1986."
+    },
+    {
+      "id": "b-26f00l",
+      "type": "scrolly",
+      "layout": "right",
+      "boxStyle": "card",
+      "graphicWidth": "56%",
+      "stepGap": "95vh",
+      "trigger": "50",
+      "flush": false,
+      "visuals": [
+        {
+          "id": "v-26f00j",
+          "kind": "image",
+          "src": "a-26f001",
+          "alt": "A month grid with the 26th circled.",
+          "fit": "contain",
+          "focal": "50% 50%",
+          "caption": ""
+        },
+        {
+          "id": "v-26f00k",
+          "kind": "image",
+          "src": "a-26f002",
+          "alt": "The numeral 26.",
+          "fit": "contain",
+          "focal": "50% 50%",
+          "caption": ""
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-26f00m",
+          "visual": "v-26f00j",
+          "number": "",
+          "body": "One square on the calendar. Nothing about it is different from the twenty-five before it or the five after.",
+          "align": "left",
+          "state": {}
+        },
+        {
+          "id": "s-26f00n",
+          "visual": "v-26f00j",
+          "number": "",
+          "body": "And yet twenty-two separate catastrophes — earthquakes, tsunamis, floods, a reactor fire, a siege, a mine explosion — have fallen on it since 1930.",
+          "align": "left",
+          "state": {
+            "zoom": 1.5,
+            "focal": "68% 74%"
+          }
+        },
+        {
+          "id": "s-26f00o",
+          "visual": "v-26f00k",
+          "number": "",
+          "body": "Together they account for roughly **330,000 deaths**. Here is the record, place by place.",
+          "align": "left",
+          "state": {}
+        }
+      ]
+    },
+    {
+      "id": "b-26f019",
+      "type": "scrolly",
+      "layout": "left",
+      "boxStyle": "card",
+      "graphicWidth": "60%",
+      "stepGap": "105vh",
+      "trigger": "50",
+      "flush": false,
+      "visuals": [
+        {
+          "id": "v-26f00p",
+          "kind": "map",
+          "caption": "Satellite base map, so no international boundary is drawn. Positions are approximate — the reported epicentre or worst-affected area.",
+          "spec": {
+            "mode": "live",
+            "center": [
+              24,
+              70
+            ],
+            "zoom": 3,
+            "interactive": false,
+            "tiles": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+            "attrib": "Imagery &copy; Esri, Maxar, Earthstar Geographics",
+            "markers": [
+              {
+                "lat": 28.17,
+                "lng": 85.38,
+                "label": "Nepal, 2026"
+              },
+              {
+                "lat": 36.44,
+                "lng": 70.72,
+                "label": "Hindu Kush, 2015"
+              },
+              {
+                "lat": -7.8,
+                "lng": 110.36,
+                "label": "Yogyakarta, 2006"
+              },
+              {
+                "lat": 19.076,
+                "lng": 72.877,
+                "label": "Mumbai, 2005"
+              },
+              {
+                "lat": 3.316,
+                "lng": 95.854,
+                "label": "Indian Ocean, 2004"
+              },
+              {
+                "lat": 29.11,
+                "lng": 58.36,
+                "label": "Bam, 2003"
+              },
+              {
+                "lat": 36.13,
+                "lng": 68.7,
+                "label": "Baghlan, 2002"
+              },
+              {
+                "lat": 23.42,
+                "lng": 70.31,
+                "label": "Kutch, 2001"
+              },
+              {
+                "lat": 36.28,
+                "lng": 100.62,
+                "label": "Gonghe, 1990"
+              },
+              {
+                "lat": -8.4,
+                "lng": 124.13,
+                "label": "Pantar, 1987"
+              },
+              {
+                "lat": 40.46,
+                "lng": 139.1,
+                "label": "Akita, 1983"
+              },
+              {
+                "lat": 41.996,
+                "lng": 21.431,
+                "label": "Skopje, 1963"
+              },
+              {
+                "lat": 40.91,
+                "lng": 35.89,
+                "label": "Ladik, 1943"
+              },
+              {
+                "lat": 39.75,
+                "lng": 39.49,
+                "label": "Erzincan, 1939"
+              },
+              {
+                "lat": 40.38,
+                "lng": 23.87,
+                "label": "Lerissos, 1932"
+              },
+              {
+                "lat": 35.03,
+                "lng": 138.98,
+                "label": "Izu, 1930"
+              }
+            ]
+          }
+        },
+        {
+          "id": "v-26f00q",
+          "kind": "image",
+          "src": "a-26f009",
+          "alt": "A village near the coast of Sumatra in ruins after the 2004 tsunami.",
+          "caption": "U.S. Navy photo by Photographer's Mate 2nd Class Philip A. McDaniel, via Wikimedia Commons · Public domain",
+          "fit": "cover",
+          "focal": "50% 50%"
+        },
+        {
+          "id": "v-26f00r",
+          "kind": "image",
+          "src": "a-26f00a",
+          "alt": "The mud-brick citadel of Arg-e Bam in Iran.",
+          "caption": "Aliafsah, via Wikimedia Commons · CC BY-SA 4.0",
+          "fit": "cover",
+          "focal": "50% 50%"
+        },
+        {
+          "id": "v-26f00s",
+          "kind": "image",
+          "src": "a-26f00b",
+          "alt": "Chhatedi, a monument in the Kutch region of Gujarat.",
+          "caption": "Jugnu, via Wikimedia Commons · CC BY-SA 4.0",
+          "fit": "cover",
+          "focal": "50% 50%"
+        },
+        {
+          "id": "v-26f00u",
+          "kind": "image",
+          "src": "a-26f00f",
+          "alt": "Candi Prambanan in Java, damaged in the 2006 earthquake.",
+          "caption": "Michael Gunther, via Wikimedia Commons · CC BY-SA 4.0",
+          "fit": "cover",
+          "focal": "50% 50%"
+        },
+        {
+          "id": "v-26f00t",
+          "kind": "image",
+          "src": "a-26f00c",
+          "alt": "Ruins in Skopje after the 1963 earthquake.",
+          "caption": "Unknown authorUnknown author, via Wikimedia Commons · Public domain",
+          "fit": "cover",
+          "focal": "50% 50%"
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-26f00v",
+          "visual": "v-26f00p",
+          "number": "26 AUGUST 2026",
+          "body": "### Nepal flash floods\n\nA massive flash flood swept through Nepal’s **Rasuwa district** and downstream areas after a sudden surge of water and debris entered the Bhote Koshi river system. It inundated settlements, washed away roads and bridges, and damaged hydropower projects.\n\nAs of August 31, authorities reported **over 900 deaths and nearly 4,500 missing**.",
+          "align": "left",
+          "state": {
+            "center": [
+              28.17,
+              85.38
+            ],
+            "zoom": 7,
+            "markers": [
+              {
+                "lat": 28.17,
+                "lng": 85.38,
+                "label": "Nepal, 2026"
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-26f00w",
+          "visual": "v-26f00p",
+          "number": "26 DECEMBER 2004",
+          "body": "### Indian Ocean tsunami\n\nA magnitude **9.1** earthquake off the coast of Sumatra triggered a tsunami that swept across every country bordering the Indian Ocean. Indonesia, Sri Lanka, India and Thailand were worst affected.\n\nAbout **228,000 people** were killed or left missing and presumed dead — one of the deadliest natural disasters in recorded history.",
+          "align": "left",
+          "state": {
+            "center": [
+              3.316,
+              95.854
+            ],
+            "zoom": 5,
+            "markers": [
+              {
+                "lat": 28.17,
+                "lng": 85.38,
+                "label": "Nepal, 2026"
+              },
+              {
+                "lat": 3.316,
+                "lng": 95.854,
+                "label": "Indian Ocean, 2004"
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-26f00x",
+          "visual": "v-26f00q",
+          "number": "",
+          "body": "Aceh, weeks later. Whole settlements on the Sumatran coast were simply removed.",
+          "align": "left",
+          "state": {}
+        },
+        {
+          "id": "s-26f00y",
+          "visual": "v-26f00p",
+          "number": "26 DECEMBER 2003",
+          "body": "### Bam earthquake\n\nA magnitude **6.6** earthquake destroyed much of the historic Iranian city of **Bam**. Thousands of buildings collapsed. Estimates of the toll varied, with figures of about **31,000** widely reported.",
+          "align": "left",
+          "state": {
+            "center": [
+              29.11,
+              58.36
+            ],
+            "zoom": 7,
+            "markers": [
+              {
+                "lat": 28.17,
+                "lng": 85.38,
+                "label": "Nepal, 2026"
+              },
+              {
+                "lat": 3.316,
+                "lng": 95.854,
+                "label": "Indian Ocean, 2004"
+              },
+              {
+                "lat": 29.11,
+                "lng": 58.36,
+                "label": "Bam, 2003"
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-26f00z",
+          "visual": "v-26f00r",
+          "number": "",
+          "body": "Arg-e Bam, the mud-brick citadel at the heart of the city. Much of it came down in the quake.",
+          "align": "left",
+          "state": {}
+        },
+        {
+          "id": "s-26f010",
+          "visual": "v-26f00p",
+          "number": "26 JANUARY 2001",
+          "body": "### Gujarat earthquake\n\nA powerful earthquake devastated large parts of Gujarat, particularly the **Kutch** region. More than **166,000 people were injured** and around **20,000 killed** — on Republic Day.",
+          "align": "left",
+          "state": {
+            "center": [
+              23.42,
+              70.31
+            ],
+            "zoom": 7,
+            "markers": [
+              {
+                "lat": 28.17,
+                "lng": 85.38,
+                "label": "Nepal, 2026"
+              },
+              {
+                "lat": 3.316,
+                "lng": 95.854,
+                "label": "Indian Ocean, 2004"
+              },
+              {
+                "lat": 29.11,
+                "lng": 58.36,
+                "label": "Bam, 2003"
+              },
+              {
+                "lat": 23.42,
+                "lng": 70.31,
+                "label": "Kutch, 2001"
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-26f011",
+          "visual": "v-26f00s",
+          "number": "",
+          "body": "Kutch, the worst-affected district. The shaking was felt across western India and into Pakistan.",
+          "align": "left",
+          "state": {}
+        },
+        {
+          "id": "s-26f012",
+          "visual": "v-26f00p",
+          "number": "26 JULY 2005",
+          "body": "### Maharashtra floods\n\nMumbai received around **944 mm of rain in 24 hours**, inundating roads, homes and railway lines and bringing the city to a standstill. **1,094 people** were killed across Maharashtra.",
+          "align": "left",
+          "state": {
+            "center": [
+              19.076,
+              72.877
+            ],
+            "zoom": 7,
+            "markers": [
+              {
+                "lat": 28.17,
+                "lng": 85.38,
+                "label": "Nepal, 2026"
+              },
+              {
+                "lat": 3.316,
+                "lng": 95.854,
+                "label": "Indian Ocean, 2004"
+              },
+              {
+                "lat": 29.11,
+                "lng": 58.36,
+                "label": "Bam, 2003"
+              },
+              {
+                "lat": 23.42,
+                "lng": 70.31,
+                "label": "Kutch, 2001"
+              },
+              {
+                "lat": 19.076,
+                "lng": 72.877,
+                "label": "Mumbai, 2005"
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-26f013",
+          "visual": "v-26f00p",
+          "number": "26 MAY 2006",
+          "body": "### Yogyakarta earthquake\n\nA magnitude **6.3** earthquake struck near Yogyakarta on Java. Thousands of homes and buildings were destroyed and more than **5,700 people** were killed.",
+          "align": "left",
+          "state": {
+            "center": [
+              -7.8,
+              110.36
+            ],
+            "zoom": 7,
+            "markers": [
+              {
+                "lat": 28.17,
+                "lng": 85.38,
+                "label": "Nepal, 2026"
+              },
+              {
+                "lat": 3.316,
+                "lng": 95.854,
+                "label": "Indian Ocean, 2004"
+              },
+              {
+                "lat": 29.11,
+                "lng": 58.36,
+                "label": "Bam, 2003"
+              },
+              {
+                "lat": 23.42,
+                "lng": 70.31,
+                "label": "Kutch, 2001"
+              },
+              {
+                "lat": 19.076,
+                "lng": 72.877,
+                "label": "Mumbai, 2005"
+              },
+              {
+                "lat": -7.8,
+                "lng": 110.36,
+                "label": "Yogyakarta, 2006"
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-26f014",
+          "visual": "v-26f00u",
+          "number": "",
+          "body": "Prambanan, the ninth-century temple complex outside Yogyakarta, was among the structures damaged.",
+          "align": "left",
+          "state": {}
+        },
+        {
+          "id": "s-26f015",
+          "visual": "v-26f00p",
+          "number": "26 DECEMBER 1939",
+          "body": "### Erzincan earthquake\n\nThe oldest entry on this list, and among the deadliest. A magnitude **7.8** earthquake along the North Anatolian fault killed about **32,700 people**.\n\nFour years later, almost to the day, the **Ladik earthquake** struck the same country on another 26th, killing about 4,020.",
+          "align": "left",
+          "state": {
+            "center": [
+              39.75,
+              39.49
+            ],
+            "zoom": 7,
+            "markers": [
+              {
+                "lat": 28.17,
+                "lng": 85.38,
+                "label": "Nepal, 2026"
+              },
+              {
+                "lat": 3.316,
+                "lng": 95.854,
+                "label": "Indian Ocean, 2004"
+              },
+              {
+                "lat": 29.11,
+                "lng": 58.36,
+                "label": "Bam, 2003"
+              },
+              {
+                "lat": 23.42,
+                "lng": 70.31,
+                "label": "Kutch, 2001"
+              },
+              {
+                "lat": 19.076,
+                "lng": 72.877,
+                "label": "Mumbai, 2005"
+              },
+              {
+                "lat": -7.8,
+                "lng": 110.36,
+                "label": "Yogyakarta, 2006"
+              },
+              {
+                "lat": 39.75,
+                "lng": 39.49,
+                "label": "Erzincan, 1939"
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-26f016",
+          "visual": "v-26f00p",
+          "number": "26 JULY 1963",
+          "body": "### Skopje earthquake\n\nA magnitude **6.1** earthquake devastated Skopje, then part of Yugoslavia. About **1,070 people** were killed and more than **200,000 were left homeless**.",
+          "align": "left",
+          "state": {
+            "center": [
+              41.996,
+              21.431
+            ],
+            "zoom": 7,
+            "markers": [
+              {
+                "lat": 28.17,
+                "lng": 85.38,
+                "label": "Nepal, 2026"
+              },
+              {
+                "lat": 3.316,
+                "lng": 95.854,
+                "label": "Indian Ocean, 2004"
+              },
+              {
+                "lat": 29.11,
+                "lng": 58.36,
+                "label": "Bam, 2003"
+              },
+              {
+                "lat": 23.42,
+                "lng": 70.31,
+                "label": "Kutch, 2001"
+              },
+              {
+                "lat": 19.076,
+                "lng": 72.877,
+                "label": "Mumbai, 2005"
+              },
+              {
+                "lat": -7.8,
+                "lng": 110.36,
+                "label": "Yogyakarta, 2006"
+              },
+              {
+                "lat": 39.75,
+                "lng": 39.49,
+                "label": "Erzincan, 1939"
+              },
+              {
+                "lat": 41.996,
+                "lng": 21.431,
+                "label": "Skopje, 1963"
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-26f017",
+          "visual": "v-26f00t",
+          "number": "",
+          "body": "Skopje afterwards. The city was substantially rebuilt in the decades that followed.",
+          "align": "left",
+          "state": {}
+        },
+        {
+          "id": "s-26f018",
+          "visual": "v-26f00p",
+          "number": "ALL SIXTEEN",
+          "body": "Those are the eight largest. Eight more natural disasters — in Afghanistan, China, Indonesia, Japan, Greece and the Hindu Kush — also fell on a 26th. All sixteen are marked here.",
+          "align": "left",
+          "state": {
+            "center": [
+              24,
+              74
+            ],
+            "zoom": 2.6,
+            "markers": [
+              {
+                "lat": 28.17,
+                "lng": 85.38,
+                "label": "Nepal, 2026"
+              },
+              {
+                "lat": 36.44,
+                "lng": 70.72,
+                "label": "Hindu Kush, 2015"
+              },
+              {
+                "lat": -7.8,
+                "lng": 110.36,
+                "label": "Yogyakarta, 2006"
+              },
+              {
+                "lat": 19.076,
+                "lng": 72.877,
+                "label": "Mumbai, 2005"
+              },
+              {
+                "lat": 3.316,
+                "lng": 95.854,
+                "label": "Indian Ocean, 2004"
+              },
+              {
+                "lat": 29.11,
+                "lng": 58.36,
+                "label": "Bam, 2003"
+              },
+              {
+                "lat": 36.13,
+                "lng": 68.7,
+                "label": "Baghlan, 2002"
+              },
+              {
+                "lat": 23.42,
+                "lng": 70.31,
+                "label": "Kutch, 2001"
+              },
+              {
+                "lat": 36.28,
+                "lng": 100.62,
+                "label": "Gonghe, 1990"
+              },
+              {
+                "lat": -8.4,
+                "lng": 124.13,
+                "label": "Pantar, 1987"
+              },
+              {
+                "lat": 40.46,
+                "lng": 139.1,
+                "label": "Akita, 1983"
+              },
+              {
+                "lat": 41.996,
+                "lng": 21.431,
+                "label": "Skopje, 1963"
+              },
+              {
+                "lat": 40.91,
+                "lng": 35.89,
+                "label": "Ladik, 1943"
+              },
+              {
+                "lat": 39.75,
+                "lng": 39.49,
+                "label": "Erzincan, 1939"
+              },
+              {
+                "lat": 40.38,
+                "lng": 23.87,
+                "label": "Lerissos, 1932"
+              },
+              {
+                "lat": 35.03,
+                "lng": 138.98,
+                "label": "Izu, 1930"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b-26f01a",
+      "type": "units",
+      "title": "Every dot is a hundred people",
+      "subtitle": "The sixteen natural disasters that fell on a 26th, smallest first. The scale is linear — keep scrolling.",
+      "unitLabel": "dead",
+      "perDot": 100,
+      "sort": true,
+      "dotSize": null,
+      "caption": "One dot = 100 reported deaths. Tolls as reported by PTI; several are estimates and Nepal’s remains provisional.",
+      "items": [
+        {
+          "date": "26 AUGUST 2026",
+          "label": "Nepal flash floods",
+          "sub": "Rasuwa district, Nepal",
+          "value": 900,
+          "note": "Still being counted. Nearly 4,500 people remain missing."
+        },
+        {
+          "date": "26 OCTOBER 2015",
+          "label": "Hindu Kush earthquake",
+          "sub": "Afghanistan / Pakistan",
+          "value": 400,
+          "note": "Felt across Afghanistan, Pakistan and northern India."
+        },
+        {
+          "date": "26 MAY 2006",
+          "label": "Yogyakarta earthquake",
+          "sub": "Java, Indonesia",
+          "value": 5700,
+          "note": "Thousands of homes destroyed across Java."
+        },
+        {
+          "date": "26 JULY 2005",
+          "label": "Maharashtra floods",
+          "sub": "Mumbai, India",
+          "value": 1094,
+          "note": "944 mm of rain fell on Mumbai in twenty-four hours."
+        },
+        {
+          "date": "26 DECEMBER 2004",
+          "label": "Indian Ocean tsunami",
+          "sub": "Off Sumatra, Indonesia",
+          "value": 228000,
+          "note": "Fourteen countries. This one bar is two-thirds of everything on this chart."
+        },
+        {
+          "date": "26 DECEMBER 2003",
+          "label": "Bam earthquake",
+          "sub": "Bam, Iran",
+          "value": 31000,
+          "note": "A city of mud-brick buildings, most of which fell."
+        },
+        {
+          "date": "26 MARCH 2002",
+          "label": "Afghanistan earthquakes",
+          "sub": "Baghlan, Afghanistan",
+          "value": 1800,
+          "note": "Mud-brick homes in Baghlan province came down overnight."
+        },
+        {
+          "date": "26 JANUARY 2001",
+          "label": "Gujarat earthquake",
+          "sub": "Kutch, India",
+          "value": 20000,
+          "note": "Republic Day, 2001. More than 166,000 people were injured."
+        },
+        {
+          "date": "26 APRIL 1990",
+          "label": "Gonghe earthquake",
+          "sub": "Qinghai, China",
+          "value": 100,
+          "note": "Magnitude 7. The smallest entry on the list, and still more than a hundred people."
+        },
+        {
+          "date": "26 NOVEMBER 1987",
+          "label": "Pantar earthquake and tsunami",
+          "sub": "Pantar, Indonesia",
+          "value": 125,
+          "note": "A magnitude 6.5 quake off a small Indonesian island."
+        },
+        {
+          "date": "26 MAY 1983",
+          "label": "Sea of Japan earthquake",
+          "sub": "Akita and Aomori, Japan",
+          "value": 104,
+          "note": "The tsunami, not the shaking, caused most of these deaths."
+        },
+        {
+          "date": "26 JULY 1963",
+          "label": "Skopje earthquake",
+          "sub": "Skopje, then Yugoslavia",
+          "value": 1070,
+          "note": "More than 200,000 people were also left homeless."
+        },
+        {
+          "date": "26 NOVEMBER 1943",
+          "label": "Ladik earthquake",
+          "sub": "Ladik-Samsun-Havza, Turkey",
+          "value": 4020,
+          "note": "Northern Turkey, four years after Erzincan — another 26th."
+        },
+        {
+          "date": "26 DECEMBER 1939",
+          "label": "Erzincan earthquake",
+          "sub": "Erzincan, Turkey",
+          "value": 32700,
+          "note": "The North Anatolian fault. Still among the deadliest quakes on record."
+        },
+        {
+          "date": "26 SEPTEMBER 1932",
+          "label": "Lerissos earthquake",
+          "sub": "Chalkidiki, Greece",
+          "value": 330,
+          "note": "Estimates range from about 160 to nearly 500."
+        },
+        {
+          "date": "26 NOVEMBER 1930",
+          "label": "North Izu earthquake",
+          "sub": "Izu peninsula, Japan",
+          "value": 272,
+          "note": "Landslides and fires added to the collapse."
+        }
+      ]
+    },
+    {
+      "id": "b-26f01b",
+      "type": "text",
+      "lead": false,
+      "dropcap": false,
+      "wide": false,
+      "body": "## Not only nature\n\nThe date does not confine itself to earthquakes and floods. Six of the twenty-two entries were made by people — a reactor pushed past its limits, a bomb in an airport crowd, ten gunmen arriving by sea."
+    },
+    {
+      "id": "b-26f01p",
+      "type": "scrolly",
+      "layout": "right",
+      "boxStyle": "card",
+      "graphicWidth": "60%",
+      "stepGap": "105vh",
+      "trigger": "50",
+      "flush": false,
+      "visuals": [
+        {
+          "id": "v-26f01c",
+          "kind": "map",
+          "caption": "Satellite base map. Positions are approximate.",
+          "spec": {
+            "mode": "live",
+            "center": [
+              40,
+              60
+            ],
+            "zoom": 3,
+            "interactive": false,
+            "tiles": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+            "attrib": "Imagery &copy; Esri, Maxar, Earthstar Geographics",
+            "markers": [
+              {
+                "lat": 36.27,
+                "lng": 43.38,
+                "label": "Qaraqosh, 2023"
+              },
+              {
+                "lat": 34.56,
+                "lng": 69.21,
+                "label": "Kabul, 2021"
+              },
+              {
+                "lat": 18.922,
+                "lng": 72.833,
+                "label": "Mumbai, 2008"
+              },
+              {
+                "lat": 14.66,
+                "lng": 99.25,
+                "label": "Lauda Air, 1991"
+              },
+              {
+                "lat": 51.389,
+                "lng": 30.099,
+                "label": "Chernobyl, 1986"
+              },
+              {
+                "lat": 41.3,
+                "lng": 123.77,
+                "label": "Benxihu, 1942"
+              }
+            ]
+          }
+        },
+        {
+          "id": "v-26f01d",
+          "kind": "image",
+          "src": "a-26f00d",
+          "alt": "Reactor no. 4 at Chernobyl and the memorial in front of it.",
+          "caption": "Matti Paavonen, via Wikimedia Commons · CC BY-SA 3.0",
+          "fit": "cover",
+          "focal": "50% 50%"
+        },
+        {
+          "id": "v-26f01e",
+          "kind": "image",
+          "src": "a-26f00e",
+          "alt": "The Taj Mahal Palace Hotel, Mumbai.",
+          "caption": "Trakesht, via Wikimedia Commons · CC BY-SA 3.0",
+          "fit": "cover",
+          "focal": "50% 50%"
+        },
+        {
+          "id": "v-26f01f",
+          "kind": "image",
+          "src": "a-26f00g",
+          "alt": "The evacuation at Hamid Karzai International Airport, August 2021.",
+          "caption": "U.S. Marine Corps photo by Sgt. Isaiah Campbell/U.S. Central Command P, via Wikimedia Commons · Public domain",
+          "fit": "cover",
+          "focal": "50% 50%"
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-26f01g",
+          "visual": "v-26f01c",
+          "number": "26 APRIL 1942",
+          "body": "### Benxihu colliery disaster\n\nA gas and coal dust explosion tore through the Benxihu coal mine in Liaoning. Carbon monoxide poisoning killed **1,549 miners** — one of the deadliest mining disasters in history.",
+          "align": "left",
+          "state": {
+            "center": [
+              41.3,
+              123.77
+            ],
+            "zoom": 7,
+            "markers": [
+              {
+                "lat": 41.3,
+                "lng": 123.77,
+                "label": "Benxihu, 1942"
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-26f01h",
+          "visual": "v-26f01c",
+          "number": "26 APRIL 1986",
+          "body": "### Chernobyl nuclear disaster\n\nReactor no. 4 exploded during a safety test, releasing large amounts of radioactive material across parts of Europe. The immediate official death toll was **31**; long-term deaths attributable to radiation remain a matter of scientific estimation rather than a counted toll.",
+          "align": "left",
+          "state": {
+            "center": [
+              51.389,
+              30.099
+            ],
+            "zoom": 7,
+            "markers": [
+              {
+                "lat": 41.3,
+                "lng": 123.77,
+                "label": "Benxihu, 1942"
+              },
+              {
+                "lat": 51.389,
+                "lng": 30.099,
+                "label": "Chernobyl, 1986"
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-26f01i",
+          "visual": "v-26f01d",
+          "number": "",
+          "body": "Reactor no. 4, now under its containment shelter. The exclusion zone around it is still in force forty years on.",
+          "align": "left",
+          "state": {}
+        },
+        {
+          "id": "s-26f01j",
+          "visual": "v-26f01c",
+          "number": "26 MAY 1991",
+          "body": "### Lauda Air Flight 004\n\nA Boeing 767 flying Bangkok to Vienna broke apart over Thailand after an uncommanded deployment of an engine thrust reverser. **All 223 people aboard** were killed.",
+          "align": "left",
+          "state": {
+            "center": [
+              14.66,
+              99.25
+            ],
+            "zoom": 7,
+            "markers": [
+              {
+                "lat": 41.3,
+                "lng": 123.77,
+                "label": "Benxihu, 1942"
+              },
+              {
+                "lat": 51.389,
+                "lng": 30.099,
+                "label": "Chernobyl, 1986"
+              },
+              {
+                "lat": 14.66,
+                "lng": 99.25,
+                "label": "Lauda Air, 1991"
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-26f01k",
+          "visual": "v-26f01c",
+          "number": "26 NOVEMBER 2008",
+          "body": "### Mumbai terror attacks\n\nTen Lashkar-e-Taiba gunmen launched coordinated attacks across the city, including at **Chhatrapati Shivaji Maharaj Terminus** and the **Taj Mahal Palace Hotel**. The siege lasted nearly three days.\n\n**166 victims** were killed, nine attackers were killed, and more than 300 people were injured.",
+          "align": "left",
+          "state": {
+            "center": [
+              18.922,
+              72.833
+            ],
+            "zoom": 7,
+            "markers": [
+              {
+                "lat": 41.3,
+                "lng": 123.77,
+                "label": "Benxihu, 1942"
+              },
+              {
+                "lat": 51.389,
+                "lng": 30.099,
+                "label": "Chernobyl, 1986"
+              },
+              {
+                "lat": 14.66,
+                "lng": 99.25,
+                "label": "Lauda Air, 1991"
+              },
+              {
+                "lat": 18.922,
+                "lng": 72.833,
+                "label": "Mumbai, 2008"
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-26f01l",
+          "visual": "v-26f01e",
+          "number": "",
+          "body": "The Taj Mahal Palace, one of the sites held during the three-day siege.",
+          "align": "left",
+          "state": {}
+        },
+        {
+          "id": "s-26f01m",
+          "visual": "v-26f01c",
+          "number": "26 AUGUST 2021",
+          "body": "### Kabul airport bombing\n\nA suicide bomber from Islamic State-Khorasan province detonated an explosive near Hamid Karzai International Airport as thousands gathered during the US-led evacuation. At least **183 people** were killed, including 170 Afghan civilians and 13 US service members.",
+          "align": "left",
+          "state": {
+            "center": [
+              34.56,
+              69.21
+            ],
+            "zoom": 7,
+            "markers": [
+              {
+                "lat": 41.3,
+                "lng": 123.77,
+                "label": "Benxihu, 1942"
+              },
+              {
+                "lat": 51.389,
+                "lng": 30.099,
+                "label": "Chernobyl, 1986"
+              },
+              {
+                "lat": 14.66,
+                "lng": 99.25,
+                "label": "Lauda Air, 1991"
+              },
+              {
+                "lat": 18.922,
+                "lng": 72.833,
+                "label": "Mumbai, 2008"
+              },
+              {
+                "lat": 34.56,
+                "lng": 69.21,
+                "label": "Kabul, 2021"
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-26f01n",
+          "visual": "v-26f01f",
+          "number": "",
+          "body": "The airport during the evacuation, days before the bombing.",
+          "align": "left",
+          "state": {}
+        },
+        {
+          "id": "s-26f01o",
+          "visual": "v-26f01c",
+          "number": "26 SEPTEMBER 2023",
+          "body": "### Qaraqosh wedding hall fire\n\nIndoor pyrotechnics ignited flammable material at a wedding hall near Mosul. The fire tore through the crowded venue, killing **more than 100 people**.",
+          "align": "left",
+          "state": {
+            "center": [
+              36.27,
+              43.38
+            ],
+            "zoom": 7,
+            "markers": [
+              {
+                "lat": 41.3,
+                "lng": 123.77,
+                "label": "Benxihu, 1942"
+              },
+              {
+                "lat": 51.389,
+                "lng": 30.099,
+                "label": "Chernobyl, 1986"
+              },
+              {
+                "lat": 14.66,
+                "lng": 99.25,
+                "label": "Lauda Air, 1991"
+              },
+              {
+                "lat": 18.922,
+                "lng": 72.833,
+                "label": "Mumbai, 2008"
+              },
+              {
+                "lat": 34.56,
+                "lng": 69.21,
+                "label": "Kabul, 2021"
+              },
+              {
+                "lat": 36.27,
+                "lng": 43.38,
+                "label": "Qaraqosh, 2023"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b-26f01u",
+      "type": "scrolly",
+      "layout": "left",
+      "boxStyle": "card",
+      "graphicWidth": "62%",
+      "stepGap": "100vh",
+      "trigger": "50",
+      "flush": false,
+      "visuals": [
+        {
+          "id": "v-26f01q",
+          "kind": "image",
+          "src": "a-26f004",
+          "alt": "Disasters on the 26th, 1930 to 1943.",
+          "fit": "contain",
+          "focal": "50% 50%",
+          "caption": ""
+        },
+        {
+          "id": "v-26f01r",
+          "kind": "image",
+          "src": "a-26f005",
+          "alt": "Disasters on the 26th, 1963 to 1991.",
+          "fit": "contain",
+          "focal": "50% 50%",
+          "caption": ""
+        },
+        {
+          "id": "v-26f01s",
+          "kind": "image",
+          "src": "a-26f006",
+          "alt": "Disasters on the 26th, 2001 to 2008.",
+          "fit": "contain",
+          "focal": "50% 50%",
+          "caption": ""
+        },
+        {
+          "id": "v-26f01t",
+          "kind": "image",
+          "src": "a-26f007",
+          "alt": "Disasters on the 26th, 2015 to 2026.",
+          "fit": "contain",
+          "focal": "50% 50%",
+          "caption": ""
+        }
+      ],
+      "steps": [
+        {
+          "id": "s-26f01v",
+          "visual": "v-26f01q",
+          "number": "",
+          "body": "### The 1930s and 1940s\n\nFive entries in fourteen years, at both ends of the scale: a Greek village, two Turkish earthquakes, a Japanese peninsula, and a coal mine in Liaoning.",
+          "align": "left",
+          "state": {}
+        },
+        {
+          "id": "s-26f01w",
+          "visual": "v-26f01r",
+          "number": "",
+          "body": "### 1963 to 1991\n\nThen a long, quiet gap. Skopje stands almost alone for two decades before Chernobyl, and the entries that follow are smaller.",
+          "align": "left",
+          "state": {}
+        },
+        {
+          "id": "s-26f01x",
+          "visual": "v-26f01s",
+          "number": "",
+          "body": "### 2001 to 2008\n\nSeven disasters in eight years — the densest stretch on the record, and the one that contains the tsunami.",
+          "align": "left",
+          "state": {}
+        },
+        {
+          "id": "s-26f01y",
+          "visual": "v-26f01t",
+          "number": "",
+          "body": "### 2015 to 2026\n\nAnd the recent end: the Hindu Kush, Kabul, a wedding hall near Mosul, and now Nepal.",
+          "align": "left",
+          "state": {}
+        }
+      ]
+    },
+    {
+      "id": "b-26f01z",
+      "type": "text",
+      "lead": false,
+      "dropcap": false,
+      "wide": false,
+      "body": "## The rest of the record\n\nSeven more natural disasters fell on a 26th. They are smaller in the count only.\n\n### Hindu Kush earthquake — Afghanistan / Pakistan\n\n*26 October 2015.* A magnitude 7.5 earthquake struck the Hindu Kush region, affecting Afghanistan, Pakistan and parts of northern India. It reportedly killed about **400 people**, most of them in Pakistan and Afghanistan.\n\n### Afghanistan earthquakes — Baghlan, Afghanistan\n\n*26 March 2002.* A series of earthquakes struck northern Afghanistan overnight on March 25–26, devastating parts of Baghlan province. Mud-brick homes collapsed and thousands were left homeless. Early estimates put the toll as high as **1,800**, though later assessments varied significantly.\n\n### Gonghe earthquake — Qinghai, China\n\n*26 April 1990.* A magnitude 7 earthquake struck Qinghai province, causing severe damage in the Gonghe region and killing **more than 100 people**.\n\n### Pantar earthquake and tsunami — Pantar, Indonesia\n\n*26 November 1987.* A magnitude 6.5 earthquake in the Pantar area of Indonesia generated a tsunami. The disaster killed **125 people**.\n\n### Sea of Japan earthquake — Akita and Aomori, Japan\n\n*26 May 1983.* A magnitude 7.8 earthquake off northern Japan triggered a tsunami that hit coastal Akita and Aomori. The wave caused most of the casualties: **104 killed**.\n\n### Lerissos earthquake — Chalkidiki, Greece\n\n*26 September 1932.* A powerful earthquake struck the Chalkidiki peninsula, severely damaging Lerissos. Hundreds of houses were destroyed and a tsunami was recorded. Historical estimates of the toll range from **about 160 to nearly 500**.\n\n### North Izu earthquake — Izu peninsula, Japan\n\n*26 November 1930.* A magnitude 7.3 earthquake struck Japan’s Izu peninsula, with landslides and fires adding to the destruction. **Around 250 people** were killed; later catalogues record 272."
+    },
+    {
+      "id": "b-26f020",
+      "type": "quote",
+      "style": "center",
+      "text": "About 228,000 people were killed or left missing and presumed dead — one of the deadliest natural disasters in recorded history.",
+      "cite": "On the Indian Ocean tsunami, 26 December 2004"
+    },
+    {
+      "id": "b-26f021",
+      "type": "text",
+      "lead": false,
+      "dropcap": false,
+      "wide": false,
+      "body": "## A note on the date\n\nDates recur. With thirty-one of them and a century of record-keeping, some number was always going to collect a heavy share of catastrophe, and the 26th has collected this one.\n\nWhat the list documents is not a property of the date. It is the ordinary arithmetic of a violent century, seen through a single square on the calendar — and, in each of these twenty-two entries, a great many people who did not come home."
+    }
+  ],
+  "assets": {
+    "a-26f001": {
+      "id": "a-26f001",
+      "file": "calendar.svg",
+      "name": "calendar.svg",
+      "type": "image/svg+xml",
+      "size": 6292,
+      "width": 1400,
+      "height": 1120,
+      "added": 1788614347933
+    },
+    "a-26f002": {
+      "id": "a-26f002",
+      "file": "numeral.svg",
+      "name": "numeral.svg",
+      "type": "image/svg+xml",
+      "size": 671,
+      "width": 1600,
+      "height": 1100,
+      "added": 1788614347933
+    },
+    "a-26f003": {
+      "id": "a-26f003",
+      "file": "social-card.jpg",
+      "name": "social-card.jpg",
+      "type": "image/jpeg",
+      "size": 56164,
+      "width": 1200,
+      "height": 630,
+      "added": 1788614347933
+    },
+    "a-26f004": {
+      "id": "a-26f004",
+      "file": "era-1930s.svg",
+      "name": "era-1930s.svg",
+      "type": "image/svg+xml",
+      "size": 5844,
+      "width": 1700,
+      "height": 1150,
+      "added": 1788614347933
+    },
+    "a-26f005": {
+      "id": "a-26f005",
+      "file": "era-mid.svg",
+      "name": "era-mid.svg",
+      "type": "image/svg+xml",
+      "size": 6767,
+      "width": 1700,
+      "height": 1150,
+      "added": 1788614347933
+    },
+    "a-26f006": {
+      "id": "a-26f006",
+      "file": "era-2000s.svg",
+      "name": "era-2000s.svg",
+      "type": "image/svg+xml",
+      "size": 7377,
+      "width": 1700,
+      "height": 1150,
+      "added": 1788614347933
+    },
+    "a-26f007": {
+      "id": "a-26f007",
+      "file": "era-now.svg",
+      "name": "era-now.svg",
+      "type": "image/svg+xml",
+      "size": 5300,
+      "width": 1700,
+      "height": 1150,
+      "added": 1788614347933
+    },
+    "a-26f008": {
+      "id": "a-26f008",
+      "file": "nepal-valley.webp",
+      "name": "nepal-valley.webp",
+      "type": "image/webp",
+      "size": 375728,
+      "width": 1800,
+      "height": 1200,
+      "added": 1788614347933
+    },
+    "a-26f009": {
+      "id": "a-26f009",
+      "file": "tsunami-aceh.webp",
+      "name": "tsunami-aceh.webp",
+      "type": "image/webp",
+      "size": 334160,
+      "width": 1800,
+      "height": 1286,
+      "added": 1788614347933
+    },
+    "a-26f00a": {
+      "id": "a-26f00a",
+      "file": "bam-citadel.webp",
+      "name": "bam-citadel.webp",
+      "type": "image/webp",
+      "size": 172240,
+      "width": 1800,
+      "height": 1192,
+      "added": 1788614347933
+    },
+    "a-26f00b": {
+      "id": "a-26f00b",
+      "file": "gujarat-kutch.webp",
+      "name": "gujarat-kutch.webp",
+      "type": "image/webp",
+      "size": 138132,
+      "width": 1800,
+      "height": 1200,
+      "added": 1788614347933
+    },
+    "a-26f00c": {
+      "id": "a-26f00c",
+      "file": "skopje-ruins.webp",
+      "name": "skopje-ruins.webp",
+      "type": "image/webp",
+      "size": 211534,
+      "width": 1484,
+      "height": 1010,
+      "added": 1788614347933
+    },
+    "a-26f00d": {
+      "id": "a-26f00d",
+      "file": "chernobyl.webp",
+      "name": "chernobyl.webp",
+      "type": "image/webp",
+      "size": 262926,
+      "width": 1800,
+      "height": 1200,
+      "added": 1788614347933
+    },
+    "a-26f00e": {
+      "id": "a-26f00e",
+      "file": "mumbai-taj.webp",
+      "name": "mumbai-taj.webp",
+      "type": "image/webp",
+      "size": 285106,
+      "width": 1800,
+      "height": 1404,
+      "added": 1788614347933
+    },
+    "a-26f00f": {
+      "id": "a-26f00f",
+      "file": "prambanan.webp",
+      "name": "prambanan.webp",
+      "type": "image/webp",
+      "size": 384338,
+      "width": 1800,
+      "height": 1350,
+      "added": 1788614347933
+    },
+    "a-26f00g": {
+      "id": "a-26f00g",
+      "file": "kabul-airport.webp",
+      "name": "kabul-airport.webp",
+      "type": "image/webp",
+      "size": 130654,
+      "width": 1800,
+      "height": 1200,
+      "added": 1788614347933
+    }
+  },
+  "created": 1788614347945,
+  "modified": 1788615849860
+}

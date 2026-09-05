@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" width="1600" height="1100">
+<defs><radialGradient id="v" cx="50%" cy="46%" r="72%">
+<stop offset="0" stop-color="#1b191e"/><stop offset="1" stop-color="#0b0a0d"/></radialGradient></defs>
+<rect width="1600" height="1100" fill="url(#v)"/>
+<text x="800" y="750" text-anchor="middle" font-family="Georgia,'Times New Roman',serif"
+ font-size="640" font-weight="700" fill="#e8e6e1" opacity="0.94" letter-spacing="-24">26</text>
+<text x="800" y="970" text-anchor="middle" font-family="Helvetica,Arial" font-size="27"
+ font-weight="600" letter-spacing="13" fill="#d9a441">THE DATE THAT KEEPS RETURNING</text>
+</svg>

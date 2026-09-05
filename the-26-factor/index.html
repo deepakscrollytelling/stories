@@ -1,0 +1,2069 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The &#39;26&#39; factor</title>
+<meta name="description" content="Nepal’s floods join a grim history of disasters that struck on the 26th — twenty-two of them since 1930, and about 330,000 dead.">
+<meta name="author" content="PTI, New Delhi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The &#39;26&#39; factor">
+<meta property="og:description" content="Nepal’s floods join a grim history of disasters that struck on the 26th — twenty-two of them since 1930, and about 330,000 dead.">
+<meta property="og:url" content="https://deepakscrollytelling.github.io/stories/the-26-factor">
+<meta property="og:image" content="https://deepakscrollytelling.github.io/stories/the-26-factor/assets/social-card.jpg">
+<meta property="og:image:alt" content="The &#39;26&#39; factor">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The &#39;26&#39; factor">
+<meta name="twitter:description" content="Nepal’s floods join a grim history of disasters that struck on the 26th — twenty-two of them since 1930, and about 330,000 dead.">
+<meta name="twitter:image" content="https://deepakscrollytelling.github.io/stories/the-26-factor/assets/social-card.jpg">
+<link rel="canonical" href="https://deepakscrollytelling.github.io/stories/the-26-factor">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+/* ===========================================================================
+   Scrollytelling Studio — runtime stylesheet
+   Shared by the live preview and every exported article.
+   Everything themeable is a CSS custom property on .story, so the editor can
+   retheme a page live by writing a single style attribute.
+   =========================================================================== */
+
+:root { color-scheme: light dark; }
+
+.story {
+  /* --- typography --- */
+  --font-heading: Georgia, 'Times New Roman', serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --size-base: 19px;
+  --scale-h1: 4.0;
+  --scale-h2: 2.1;
+  --scale-h3: 1.4;
+  --scale-lead: 1.28;
+  --scale-small: 0.82;
+  --leading-body: 1.65;
+  --leading-head: 1.08;
+  --tracking-head: -0.02em;
+  --weight-head: 700;
+  --weight-body: 400;
+
+  /* --- colour --- */
+  --bg: #ffffff;
+  --bg-alt: #f4f4f2;
+  --fg: #16181d;
+  --fg-muted: #6b7280;
+  --accent: #c8452d;
+  --rule: rgba(0, 0, 0, 0.12);
+
+  /* --- step boxes --- */
+  --box-bg: #ffffff;
+  --box-fg: #16181d;
+  --box-radius: 4px;
+  --box-pad: 1.5rem 1.6rem;
+  --box-shadow: 0 2px 18px rgba(0, 0, 0, 0.13);
+  --box-border: 1px solid transparent;
+  --box-blur: 0px;
+
+  /* --- layout --- */
+  --measure: 34rem;          /* prose column width          */
+  --measure-wide: 58rem;     /* wide media width            */
+  --gutter: 1.5rem;
+  --block-gap: 5.5rem;
+  --step-gap: 90vh;          /* scroll distance between steps */
+  --graphic-pad: 3vmin;
+
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: var(--size-base);
+  font-weight: var(--weight-body);
+  line-height: var(--leading-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+.story *, .story *::before, .story *::after { box-sizing: border-box; }
+
+.story h1, .story h2, .story h3, .story h4 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-head);
+  line-height: var(--leading-head);
+  letter-spacing: var(--tracking-head);
+  margin: 0 0 0.5em;
+  text-wrap: balance;
+}
+.story h1 { font-size: calc(var(--size-base) * var(--scale-h1)); }
+.story h2 { font-size: calc(var(--size-base) * var(--scale-h2)); }
+.story h3 { font-size: calc(var(--size-base) * var(--scale-h3)); }
+.story p  { margin: 0 0 1.15em; }
+.story p:last-child { margin-bottom: 0; }
+.story a  { color: var(--accent); text-underline-offset: 0.18em; }
+.story strong { font-weight: 650; }
+.story em { font-style: italic; }
+.story img, .story video { display: block; max-width: 100%; }
+
+/* --------------------------------------------------------------------------
+   Shared layout helpers
+   -------------------------------------------------------------------------- */
+.st-wrap    { width: min(var(--measure), calc(100% - var(--gutter) * 2)); margin-inline: auto; }
+.st-wrap--wide { width: min(var(--measure-wide), calc(100% - var(--gutter) * 2)); margin-inline: auto; }
+.st-block   { margin-block: var(--block-gap); }
+.st-block:first-child { margin-top: 0; }
+.st-caption {
+  font-family: var(--font-ui);
+  font-size: calc(var(--size-base) * var(--scale-small));
+  line-height: 1.45;
+  color: var(--fg-muted);
+  margin-top: 0.7em;
+}
+.st-caption a { color: inherit; }
+
+/* --------------------------------------------------------------------------
+   Reading-progress bar
+   -------------------------------------------------------------------------- */
+.st-progress {
+  position: fixed; inset: 0 0 auto 0; height: 3px; z-index: 90;
+  background: transparent; pointer-events: none;
+}
+.st-progress__bar {
+  height: 100%; width: 0%; background: var(--accent);
+  transform-origin: left center; transition: width 90ms linear;
+}
+
+/* --------------------------------------------------------------------------
+   Cover
+   -------------------------------------------------------------------------- */
+.st-cover {
+  position: relative; display: grid; align-items: end;
+  min-height: var(--cover-height, 92vh);
+  margin-bottom: var(--block-gap);
+  overflow: hidden;
+  isolation: isolate;
+}
+.st-cover--plain { align-items: center; text-align: center; min-height: auto; padding-block: 14vh 9vh; }
+.st-cover__media { position: absolute; inset: 0; z-index: -2; }
+.st-cover__media img, .st-cover__media video {
+  width: 100%; height: 100%; object-fit: cover;
+  object-position: var(--cover-focal, 50% 50%);
+}
+.st-cover__scrim {
+  position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,var(--scrim-strength, 0.75)) 0%,
+    rgba(0,0,0,calc(var(--scrim-strength, 0.75) * 0.45)) 38%,
+    rgba(0,0,0,0) 78%);
+}
+.st-cover--media { color: #fff; }
+.st-cover--media .st-cover__inner { padding-bottom: 8vh; }
+.st-cover--media .st-cover__kicker,
+.st-cover--media .st-cover__byline { color: rgba(255,255,255,0.82); }
+.st-cover--media .st-cover__standfirst { color: rgba(255,255,255,0.93); }
+.st-cover__inner { position: relative; padding-top: 6vh; }
+.st-cover__kicker {
+  font-family: var(--font-ui);
+  font-size: calc(var(--size-base) * var(--scale-small));
+  letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600;
+  color: var(--accent); margin-bottom: 1.1em;
+}
+.st-cover__title { margin-bottom: 0.34em; }
+.st-cover__standfirst {
+  font-family: var(--font-body);
+  font-size: calc(var(--size-base) * var(--scale-lead));
+  line-height: 1.42; color: var(--fg-muted); margin-bottom: 1.5em;
+  text-wrap: pretty;
+}
+.st-cover__byline {
+  font-family: var(--font-ui);
+  font-size: calc(var(--size-base) * var(--scale-small));
+  letter-spacing: 0.04em; color: var(--fg-muted);
+}
+.st-cover__byline span + span::before { content: '·'; margin: 0 0.55em; opacity: 0.6; }
+.st-cover__cue {
+  position: absolute; left: 50%; bottom: 2.4vh; translate: -50% 0;
+  width: 22px; height: 22px; border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor; rotate: 45deg; opacity: 0.55;
+  animation: st-cue 2s ease-in-out infinite;
+}
+@keyframes st-cue { 0%,100% { translate: -50% 0; opacity: 0.25; } 50% { translate: -50% 6px; opacity: 0.7; } }
+
+/* --------------------------------------------------------------------------
+   Text / quote / divider
+   -------------------------------------------------------------------------- */
+.st-text > * + h2 { margin-top: 1.8em; }
+.st-text > * + h3 { margin-top: 1.6em; }
+.st-text--lead { font-size: calc(var(--size-base) * var(--scale-lead)); line-height: 1.5; }
+.st-text--drop > p:first-of-type::first-letter {
+  float: left; font-family: var(--font-heading); font-weight: var(--weight-head);
+  font-size: 3.6em; line-height: 0.82; padding: 0.06em 0.09em 0 0; color: var(--accent);
+}
+
+.st-quote { text-align: center; }
+.st-quote blockquote {
+  margin: 0; font-family: var(--font-heading);
+  font-size: calc(var(--size-base) * 1.75); line-height: 1.28;
+  letter-spacing: var(--tracking-head); text-wrap: balance;
+}
+.st-quote--rule blockquote { border-left: 3px solid var(--accent); padding-left: 1.1em; text-align: left; }
+.st-quote--rule { text-align: left; }
+.st-quote cite {
+  display: block; margin-top: 1.1em; font-family: var(--font-ui); font-style: normal;
+  font-size: calc(var(--size-base) * var(--scale-small));
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-muted);
+}
+.st-divider { display: flex; justify-content: center; gap: 0.9em; color: var(--fg-muted); }
+.st-divider span { width: 5px; height: 5px; border-radius: 50%; background: currentColor; opacity: 0.5; }
+.st-divider--rule { display: block; border-top: 1px solid var(--rule); }
+
+/* --------------------------------------------------------------------------
+   Full-bleed media
+   -------------------------------------------------------------------------- */
+.st-full { position: relative; margin-block: var(--block-gap); }
+.st-full--bleed .st-full__media { width: 100vw; margin-left: 50%; translate: -50% 0; }
+.st-full__media img, .st-full__media video { width: 100%; height: auto; }
+.st-full--tall .st-full__media { height: 88vh; }
+.st-full--tall .st-full__media img, .st-full--tall .st-full__media video { height: 100%; object-fit: cover; }
+.st-full__overlay {
+  position: absolute; inset: auto 0 0 0; padding: 4rem var(--gutter) 3rem; color: #fff;
+  background: linear-gradient(to top, rgba(0,0,0,0.72), rgba(0,0,0,0));
+}
+.st-full__overlay h2 { color: #fff; }
+.st-full .st-caption { width: min(var(--measure), calc(100% - var(--gutter) * 2)); margin-inline: auto; }
+
+/* --------------------------------------------------------------------------
+   Embed block
+   -------------------------------------------------------------------------- */
+.st-embed__frame { position: relative; width: 100%; background: var(--bg-alt); }
+.st-embed__frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.st-embed__frame--fixed { height: auto; }
+.st-embed__frame--fixed iframe { position: static; height: var(--embed-height, 500px); }
+
+/* ===========================================================================
+   THE SCROLLY BLOCK
+   =========================================================================== */
+.st-scrolly {
+  position: relative;
+  margin-block: var(--block-gap);
+  --graphic-w: 58%;
+}
+
+.st-scrolly__inner {
+  display: grid;
+  width: min(var(--scrolly-width, 100%), 100%);
+  margin-inline: auto;
+}
+
+/* -- side-by-side layouts -- */
+.st-scrolly--right .st-scrolly__inner { grid-template-columns: var(--graphic-w) 1fr; }
+.st-scrolly--left  .st-scrolly__inner { grid-template-columns: 1fr var(--graphic-w); }
+.st-scrolly--left  .st-scrolly__graphic { order: 2; }
+.st-scrolly--left  .st-scrolly__steps   { order: 1; }
+
+/* -- overlay layouts: graphic spans full width, steps float above -- */
+.st-scrolly--overlay .st-scrolly__inner,
+.st-scrolly--center  .st-scrolly__inner { grid-template-columns: 1fr; }
+.st-scrolly--overlay .st-scrolly__graphic,
+.st-scrolly--center  .st-scrolly__graphic { grid-area: 1 / 1; }
+.st-scrolly--overlay .st-scrolly__steps,
+.st-scrolly--center  .st-scrolly__steps { grid-area: 1 / 1; position: relative; z-index: 2; }
+
+.st-scrolly__graphic {
+  position: sticky; top: 0;
+  height: 100svh;
+  display: grid; place-items: center;
+  padding: var(--graphic-pad);
+  overflow: hidden;
+}
+.st-scrolly--flush .st-scrolly__graphic { padding: 0; }
+
+.st-scrolly__stage {
+  position: relative; width: 100%; height: 100%;
+  display: grid; place-items: center;
+}
+
+/* Every visual is a stacked layer; only the active one is shown. */
+.st-vis {
+  grid-area: 1 / 1;
+  width: 100%; height: 100%;
+  display: grid; place-items: center;
+  opacity: 0; visibility: hidden;
+  transition: opacity var(--vis-fade, 520ms) ease;
+  will-change: opacity;
+}
+.st-vis.is-active { opacity: 1; visibility: visible; }
+.st-vis > figure { margin: 0; width: 100%; height: 100%; display: grid; place-items: center; }
+/* Images centre inside the frame; charts and maps fill it. */
+.st-vis--chart > figure, .st-vis--map > figure {
+  place-items: stretch;
+  grid-template-rows: 1fr auto;   /* graphic, then caption in normal flow */
+}
+.st-vis__host { width: 100%; height: 100%; min-width: 0; min-height: 0; }
+/* An absolutely-placed caption would sit on top of a chart's own axis labels. */
+.st-vis--chart .st-vis__label,
+.st-vis--map .st-vis__label { position: static; padding: 0.55em 0.2em 0; }
+
+.st-vis__img, .st-vis__video {
+  width: 100%; height: 100%;
+  object-fit: var(--vis-fit, contain);
+  object-position: var(--vis-focal, 50% 50%);
+  transition: scale 1.4s ease, translate 1.4s ease;
+}
+.st-vis--zoom .st-vis__img { scale: var(--vis-zoom, 1); }
+
+.st-vis__label {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  font-family: var(--font-ui);
+  font-size: calc(var(--size-base) * var(--scale-small));
+  color: var(--fg-muted); padding: 0.6em 0.2em; pointer-events: none;
+}
+
+/* -- the scrolling text column -- */
+.st-scrolly__steps { padding-block: 12vh 12vh; }
+.st-scrolly--overlay .st-scrolly__steps,
+.st-scrolly--center  .st-scrolly__steps { padding-block: 22vh 30vh; }
+
+.st-step {
+  min-height: var(--step-gap);
+  display: flex; align-items: center;
+  padding-inline: var(--gutter);
+}
+.st-step:last-child { min-height: max(var(--step-gap), 70vh); }
+
+.st-step__box {
+  width: min(var(--step-width, 26rem), 100%);
+  background: var(--box-bg); color: var(--box-fg);
+  padding: var(--box-pad);
+  border-radius: var(--box-radius);
+  box-shadow: var(--box-shadow);
+  border: var(--box-border);
+  backdrop-filter: blur(var(--box-blur));
+  -webkit-backdrop-filter: blur(var(--box-blur));
+  opacity: var(--step-idle-opacity, 0.34);
+  translate: 0 12px;
+  transition: opacity 420ms ease, translate 420ms ease;
+}
+.st-step.is-active .st-step__box { opacity: 1; translate: 0 0; }
+.st-step__box > *:last-child { margin-bottom: 0; }
+.st-step__box h3 { margin-bottom: 0.45em; }
+.st-step__num {
+  display: block; font-family: var(--font-ui); font-weight: 700;
+  font-size: calc(var(--size-base) * var(--scale-small));
+  letter-spacing: 0.12em; color: var(--accent); margin-bottom: 0.8em;
+}
+
+/* per-step horizontal alignment inside overlay layouts */
+.st-step--left   { justify-content: flex-start; }
+.st-step--center { justify-content: center; }
+.st-step--right  { justify-content: flex-end; }
+
+/* "plain" box style — text sits directly on the graphic with a soft scrim */
+.st-scrolly--plainbox .st-step__box {
+  background: none; box-shadow: none; border: 0; padding: 0;
+  text-shadow: 0 1px 20px rgba(0,0,0,0.55);
+}
+
+/* --------------------------------------------------------------------------
+   Charts (rendered as inline SVG by the runtime — no library)
+   -------------------------------------------------------------------------- */
+.st-chart { width: 100%; height: 100%; display: grid; grid-template-rows: auto 1fr auto; gap: 0.6rem; }
+.st-chart__title {
+  font-family: var(--font-ui); font-weight: 650;
+  font-size: calc(var(--size-base) * 0.95); color: var(--fg);
+}
+.st-chart__sub {
+  font-family: var(--font-ui);
+  font-size: calc(var(--size-base) * var(--scale-small)); color: var(--fg-muted);
+  margin-top: -0.35rem;
+}
+.st-chart svg { width: 100%; height: 100%; overflow: visible; }
+.st-chart .axis line, .st-chart .axis path { stroke: var(--rule); }
+.st-chart .grid line { stroke: var(--rule); stroke-dasharray: 2 4; }
+.st-chart .tick text {
+  font-family: var(--font-ui); font-size: 12px; fill: var(--fg-muted);
+}
+.st-chart .series.is-dim { opacity: 0.18; }
+.st-chart .line { fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.st-chart .area { opacity: 0.16; }
+
+/* Transitions are switched on only after the first paint (.is-built), so a
+   chart appears at its true size instead of animating up from nothing on load.
+   The runtime repositions these elements rather than recreating them, which is
+   what lets the reader see values move as they scroll. */
+:where(.st-chart.is-built) {
+  --ct: 760ms cubic-bezier(.33,.1,.2,1);
+  --cf: 420ms ease;
+}
+.st-chart.is-built .series      { transition: opacity var(--cf); }
+.st-chart.is-built .bar         { transition: x var(--ct), y var(--ct), width var(--ct), height var(--ct), opacity var(--cf); }
+.st-chart.is-built .dot         { transition: cx var(--ct), cy var(--ct), r var(--cf), opacity var(--cf); }
+.st-chart.is-built .line,
+.st-chart.is-built .area        { transition: d var(--ct), opacity var(--cf); }
+.st-chart.is-built .series-label{ transition: x var(--ct), y var(--ct), opacity var(--cf); }
+.st-chart.is-built .grid line   { transition: y1 var(--ct), y2 var(--ct), opacity var(--cf); }
+.st-chart.is-built .tick text   { transition: x var(--ct), y var(--ct), opacity var(--cf); }
+.st-chart.is-built .annot__line { transition: x1 var(--ct), x2 var(--ct), y1 var(--ct), y2 var(--ct), opacity var(--cf); }
+.st-chart.is-built .annot__text { transition: x var(--ct), y var(--ct), opacity var(--cf); }
+.st-chart .series-label {
+  font-family: var(--font-ui); font-size: 13px; font-weight: 600;
+  dominant-baseline: middle;
+}
+.st-chart .annot__line { stroke: var(--fg); stroke-width: 1; stroke-dasharray: 3 3; opacity: 0.55; }
+.st-chart .annot__text {
+  font-family: var(--font-ui); font-size: 12.5px; fill: var(--fg);
+  paint-order: stroke; stroke: var(--bg); stroke-width: 3.5px; stroke-linejoin: round;
+}
+.st-chart__legend {
+  display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem;
+  font-family: var(--font-ui); font-size: calc(var(--size-base) * var(--scale-small));
+  color: var(--fg-muted);
+}
+.st-chart__legend span { display: inline-flex; align-items: center; gap: 0.42em; }
+.st-chart__legend i { width: 11px; height: 11px; border-radius: 2px; }
+
+/* --------------------------------------------------------------------------
+   Maps
+   -------------------------------------------------------------------------- */
+.st-map { width: 100%; height: 100%; position: relative; background: var(--bg-alt); }
+.st-map .leaflet-container { width: 100%; height: 100%; background: var(--bg-alt); font-family: var(--font-ui); }
+.st-map__attrib {
+  position: absolute; right: 4px; bottom: 2px; z-index: 500;
+  font-family: var(--font-ui); font-size: 10px; color: var(--fg-muted);
+  background: color-mix(in srgb, var(--bg) 78%, transparent); padding: 1px 5px; border-radius: 3px;
+}
+.st-map__marker {
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--accent); border: 2.5px solid var(--bg);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.4);
+}
+/* Static image "map" — pans and zooms a big image, zero dependencies */
+.st-imgmap { width: 100%; height: 100%; overflow: hidden; position: relative; }
+.st-imgmap img {
+  position: absolute; top: 50%; left: 50%;
+  width: 100%; height: 100%; object-fit: cover;
+  transform-origin: center;
+  transition: translate 1.6s cubic-bezier(.4,0,.2,1), scale 1.6s cubic-bezier(.4,0,.2,1);
+  translate: -50% -50%;
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+.st-footer {
+  margin-top: calc(var(--block-gap) * 1.4);
+  padding-block: 3.5rem 4.5rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-ui);
+  font-size: calc(var(--size-base) * var(--scale-small));
+  color: var(--fg-muted);
+}
+.st-footer p { margin-bottom: 0.5em; }
+.st-share { display: flex; gap: 0.6rem; margin-top: 1.4em; flex-wrap: wrap; }
+.st-share a {
+  display: inline-flex; align-items: center; gap: 0.45em;
+  padding: 0.5em 0.95em; border: 1px solid var(--rule); border-radius: 100px;
+  color: var(--fg); text-decoration: none; font-weight: 550;
+  transition: background 160ms ease, border-color 160ms ease;
+}
+.st-share a:hover { background: var(--bg-alt); border-color: var(--fg-muted); }
+
+/* --------------------------------------------------------------------------
+   Responsive — collapse side-by-side scrolly to overlay on narrow screens
+   -------------------------------------------------------------------------- */
+@media (max-width: 800px) {
+  .story {
+    --size-base: 17px;
+    --scale-h1: 2.5;
+    --scale-h2: 1.7;
+    --block-gap: 3.5rem;
+    --gutter: 1.15rem;
+  }
+  .st-scrolly--right .st-scrolly__inner,
+  .st-scrolly--left  .st-scrolly__inner { grid-template-columns: 1fr; }
+  .st-scrolly--right .st-scrolly__graphic,
+  .st-scrolly--left  .st-scrolly__graphic { grid-area: 1 / 1; height: 100svh; }
+  .st-scrolly--right .st-scrolly__steps,
+  .st-scrolly--left  .st-scrolly__steps {
+    grid-area: 1 / 1; position: relative; z-index: 2; order: 0;
+    padding-block: 26vh 30vh;
+  }
+  .st-scrolly .st-step { justify-content: center; }
+  .st-scrolly .st-step__box { --step-width: 100%; }
+  .st-scrolly--plainbox .st-step__box {
+    background: color-mix(in srgb, var(--box-bg) 88%, transparent);
+    padding: 1.1rem 1.2rem; border-radius: var(--box-radius); text-shadow: none;
+  }
+  .st-cover__title { text-wrap: pretty; }
+  .st-full__overlay { padding: 2.5rem var(--gutter) 1.75rem; }
+  .st-quote blockquote { font-size: calc(var(--size-base) * 1.4); }
+}
+
+/* --------------------------------------------------------------------------
+   Motion & print
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .story * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  .st-step__box { opacity: 1; translate: 0 0; }
+  .st-cover__cue { display: none; }
+  .st-chart.is-built * { transition: none !important; }
+}
+
+@media print {
+  .st-scrolly__graphic { position: static; height: auto; page-break-inside: avoid; }
+  .st-vis { opacity: 1; visibility: visible; position: static; page-break-inside: avoid; }
+  .st-step__box { opacity: 1; box-shadow: none; }
+  .st-progress, .st-cover__cue, .st-share { display: none; }
+}
+
+/* ===========================================================================
+   Unit chart — horizontal, linear, one dot per N
+   =========================================================================== */
+.st-units {
+  position: relative;
+  margin-block: var(--block-gap);
+  /* height is set by the runtime from how far the track has to travel */
+}
+.st-units__sticky {
+  position: sticky; top: 0;
+  height: 100svh;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto auto auto;
+  gap: 0.5rem;
+  padding: 3.2vmin var(--gutter) 2.4vmin;
+  overflow: hidden;
+}
+.st-units__head { max-width: var(--measure-wide); }
+.st-units__title { font-size: calc(var(--size-base) * 1.55); margin: 0 0 0.15em; }
+.st-units__sub {
+  font-family: var(--font-ui); color: var(--fg-muted);
+  font-size: calc(var(--size-base) * var(--scale-small)); margin: 0 0 0.5em;
+}
+.st-units__key {
+  display: flex; align-items: center; gap: 0.5em; margin: 0;
+  font-family: var(--font-ui); font-size: calc(var(--size-base) * var(--scale-small));
+  color: var(--fg-muted); letter-spacing: 0.02em;
+}
+.st-units__keydot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--accent); flex: none;
+}
+
+.st-units__viewport { position: relative; overflow: hidden; min-height: 0; }
+.st-units__track { position: absolute; inset: 0; }
+.st-units__svg { display: block; }
+.st-units__cam { transition: transform 120ms linear; }
+
+.st-units__dots { fill: var(--fg-muted); }
+.st-units__grp {
+  opacity: 0;                       /* nothing is shown before its turn */
+  transition: opacity 520ms ease;
+}
+.st-units__grp.is-in { opacity: 0.42; }
+.st-units__grp.is-active { opacity: 1; }
+.st-units__grp.is-active .st-units__dots { fill: var(--accent); }
+.st-units__grp .st-units__dots { transition: fill 520ms ease; }
+
+.st-units__label {
+  position: absolute; top: 0; padding-right: 1.2em;
+  font-family: var(--font-ui);
+  opacity: 0;                       /* only the current entry and the one before */
+  translate: 0 6px;
+  transition: opacity 380ms ease, translate 380ms ease;
+  pointer-events: none;
+}
+.st-units__label.is-in { opacity: 0.42; translate: 0 0; }
+.st-units__label.is-active { opacity: 1; }
+.st-units__date {
+  display: block; font-size: 10.5px; font-weight: 700; letter-spacing: 0.11em;
+  color: var(--accent); margin-bottom: 0.25em;
+}
+.st-units__label strong {
+  display: block; font-family: var(--font-heading);
+  font-size: calc(var(--size-base) * 0.9); line-height: 1.12; color: var(--fg);
+}
+.st-units__label em {
+  display: block; font-style: normal; font-size: 11.5px;
+  color: var(--fg-muted); margin-top: 0.15em;
+}
+.st-units__val {
+  display: block; margin-top: 0.3em; font-size: 12.5px;
+  font-weight: 700; color: var(--fg); font-variant-numeric: tabular-nums;
+}
+
+/* The running caption: what you are looking at right now. */
+.st-units__now {
+  display: grid; gap: 0.15em;
+  padding: 0.7rem 0.9rem;
+  background: var(--box-bg); color: var(--box-fg);
+  border: var(--box-border); border-radius: var(--box-radius);
+  box-shadow: var(--box-shadow);
+  backdrop-filter: blur(var(--box-blur)); -webkit-backdrop-filter: blur(var(--box-blur));
+  max-width: min(38rem, 100%);
+}
+.st-units__now strong { font-family: var(--font-heading); font-size: calc(var(--size-base) * 1.05); }
+.st-units__now span {
+  font-family: var(--font-ui); font-size: calc(var(--size-base) * var(--scale-small));
+  color: var(--fg-muted); line-height: 1.45;
+}
+.st-units__now b {
+  font-family: var(--font-ui); font-size: calc(var(--size-base) * var(--scale-small));
+  color: var(--accent); font-variant-numeric: tabular-nums; letter-spacing: 0.02em;
+}
+
+.st-units__rail { height: 2px; background: var(--rule); border-radius: 2px; overflow: hidden; }
+.st-units__railbar { height: 100%; width: 0; background: var(--accent); transition: width 90ms linear; }
+
+.st-units__cue {
+  position: absolute; right: calc(var(--gutter) + 2px); top: 50%;
+  width: 15px; height: 15px; translate: 0 -50%; rotate: -45deg;
+  border-right: 2px solid var(--fg-muted); border-bottom: 2px solid var(--fg-muted);
+  opacity: 0.4; animation: st-units-cue 2.1s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes st-units-cue {
+  0%, 100% { translate: 0 -50%; opacity: 0.22; }
+  50%      { translate: 6px -50%; opacity: 0.6; }
+}
+
+.st-units__caption {
+  width: min(var(--measure-wide), calc(100% - var(--gutter) * 2));
+  margin: 0.9rem auto 0;
+}
+
+/* On a phone the chrome has to get out of the way — the dots are the story and
+   they need every pixel of a short, narrow frame. */
+@media (max-width: 640px) {
+  .st-units__sticky {
+    padding: 10px 12px 10px; gap: 0.35rem;
+    grid-template-rows: auto minmax(0, 1fr) auto auto;
+  }
+  .st-units__title {
+    font-size: calc(var(--size-base) * 1.1); line-height: 1.12;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .st-units__sub { display: none; }          /* the title and key already say it */
+  .st-units__key { font-size: 11px; margin-top: 0.1em; }
+
+  .st-units__now { padding: 0.5rem 0.65rem; gap: 0.05em; }
+  .st-units__now strong { font-size: calc(var(--size-base) * 0.95); }
+  .st-units__now span {
+    font-size: 12px; line-height: 1.35;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .st-units__now b { font-size: 11.5px; }
+
+  .st-units__label { padding-bottom: 12px; padding-right: 0.7em; }
+  .st-units__label strong { font-size: 13.5px; line-height: 1.14; }
+  .st-units__date { font-size: 9.5px; letter-spacing: 0.08em; }
+  .st-units__label em { font-size: 10.5px; }
+  .st-units__val { font-size: 11.5px; margin-top: 0.2em; }
+
+  .st-units__cue { display: none; }
+  .st-units__caption { font-size: 11px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .st-units__track, .st-units__railbar { transition: none; }
+  .st-units__cue { animation: none; }
+}
+
+/* label band and per-block baseline */
+.st-units__label {
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding-bottom: 16px; gap: 1px;
+}
+.st-units__label strong {
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+/* staggered labels: a stem ties each one back to its own block of dots */
+.st-units__label { justify-content: flex-start; padding-bottom: 4px; }
+.st-units__stem { display: none; }
+
+
+/* compact track labels: date, name on one line, figure */
+.st-units__label {
+  justify-content: flex-start; padding-bottom: 2px; padding-right: 0.6em;
+  gap: 0; line-height: 1.1;
+}
+.st-units__label strong {
+  -webkit-line-clamp: 2; line-clamp: 2; white-space: normal;
+  font-size: 13.5px; line-height: 1.18; margin: 2px 0;
+  overflow: hidden; text-overflow: ellipsis;
+}
+.st-units__label em { display: none; }          /* place lives in the caption */
+.st-units__date { font-size: 9px; letter-spacing: 0.07em; margin: 0; }
+.st-units__val { font-size: 11px; margin: 0; }
+@media (max-width: 640px) {
+  .st-units__label strong { font-size: 11.5px; }
+  .st-units__date { font-size: 8.5px; }
+  .st-units__val { font-size: 10px; }
+}
+
+
+/* ---------------------------------------------------------------------------
+   The opening beat: a single dot, centred and large enough to register, before
+   any entry is named. It shrinks into its place on the left as you scroll.
+   --------------------------------------------------------------------------- */
+.st-units__seed { position: absolute; inset: 0; pointer-events: none; }
+.st-units__seed[hidden] { display: none; }
+.st-units__seeddot {
+  position: absolute; top: 0; left: 0;
+  border-radius: 50%; background: var(--accent);
+  will-change: transform, width, height;
+}
+.st-units__seedcap {
+  position: absolute; left: 50%; translate: -50% 0;
+  font-family: var(--font-ui); font-size: calc(var(--size-base) * 0.95);
+  letter-spacing: 0.03em; color: var(--fg);
+  white-space: nowrap;
+}
+.st-units__track { transition: opacity 300ms ease; }
+
+/* The caption belongs to the frame, not the scroll track — as a sibling of the
+   sticky element it landed in the middle of the chart on the way past. */
+.st-units__caption {
+  margin: 0; font-family: var(--font-ui);
+  font-size: calc(var(--size-base) * 0.72); line-height: 1.4;
+  color: var(--fg-muted);
+}
+.st-units__where { color: var(--fg-muted); font-weight: 600; }
+
+@media (max-width: 640px) {
+  .st-units__seedcap { font-size: 13px; top: 60%; }
+  .st-units__caption { font-size: 10px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .st-units__grp, .st-units__label, .st-units__track { transition: none; }
+}
+
+
+/* the seed caption is placed by the runtime, clear of the dot */
+.st-units__seedcap { text-align: center; }
+@media (max-width: 640px) {
+  .st-units__label strong { font-size: 12px; }
+}
+
+</style>
+</head>
+<body>
+<div class="st-progress" aria-hidden="true"><div class="st-progress__bar"></div></div>
+<article class="story" style="--font-heading:&#39;Newsreader&#39;, Georgia, serif;--font-body:&#39;IBM Plex Sans&#39;, Helvetica, Arial, sans-serif;--font-ui:&#39;IBM Plex Sans&#39;, Helvetica, Arial, sans-serif;--size-base:19px;--scale-h1:3.9;--scale-h2:2.0;--scale-h3:1.25;--scale-lead:1.28;--scale-small:0.82;--leading-body:1.68;--leading-head:1.08;--tracking-head:-0.015em;--weight-head:600;--weight-body:400;--bg:#111013;--bg-alt:#1a181d;--fg:#e8e6e1;--fg-muted:#8b8781;--accent:#d9a441;--rule:rgba(232,230,225,0.16);--box-bg:rgba(19,18,22,0.90);--box-fg:#e8e6e1;--box-radius:5px;--box-pad:1.5rem 1.6rem;--box-shadow:0 10px 44px rgba(0,0,0,0.55);--box-border:1px solid rgba(232,230,225,0.10);--box-blur:10px;--measure:34rem;--measure-wide:58rem;--gutter:1.5rem;--block-gap:5.5rem;--step-gap:90vh;--step-width:25rem;--step-idle-opacity:0.3;--graphic-pad:3vmin;--vis-fade:520ms;--cover-height:92vh;--scrim-strength:0.82">
+<header class="st-cover st-cover--media" style="--cover-height:96vh;--scrim-strength:0.82;--cover-focal:50% 45%">
+  <div class="st-cover__media"><img src="assets/nepal-valley.webp" alt="The Langtang valley in Rasuwa district, Nepal." fetchpriority="high" decoding="async"></div><div class="st-cover__scrim"></div>
+  <div class="st-cover__inner st-wrap">
+    <div class="st-cover__kicker">Press Trust of India</div>
+    <h1 class="st-cover__title">The &#39;26&#39; factor</h1>
+    <p class="st-cover__standfirst">Nepal’s flash floods are the latest addition to a grim history of disasters that struck on the 26th — twenty-two of them, across ninety-six years.</p>
+    <div class="st-cover__byline"><span>PTI, New Delhi</span><span>31 August 2026</span></div>
+  </div>
+  <div class="st-cover__cue" aria-hidden="true"></div>
+</header>
+
+<section class="st-text st-block st-wrap st-text--lead st-text--drop"><p>Is it the jinx of 26? The catastrophic flash floods that tore through Nepal on August 26 are the latest addition to a grim history of disasters that struck on the 26th — right from the 1939 earthquake in Turkey that killed more than 32,700 people to the 2004 Boxing Day tsunami in which 228,000 people were killed, missing and presumed dead.</p>
+<p>And it is not just about natural disasters. The date is also when the Mumbai terror siege began on the night of November 26, 2008, and of the Chernobyl nuclear accident on April 26, 1986.</p></section>
+
+<section class="st-scrolly st-scrolly--right" style="--graphic-w:56%;--step-gap:95vh;--trigger:50">
+  <div class="st-scrolly__inner">
+    <div class="st-scrolly__graphic"><div class="st-scrolly__stage">
+<div class="st-vis st-vis--image" data-vis-id="v-26f00j" data-vis-kind="image" style="--vis-fit:contain;--vis-focal:50% 50%"><figure><img class="st-vis__img" src="assets/calendar.svg" alt="A month grid with the 26th circled." loading="lazy" decoding="async"></figure></div>
+<div class="st-vis st-vis--image" data-vis-id="v-26f00k" data-vis-kind="image" style="--vis-fit:contain;--vis-focal:50% 50%"><figure><img class="st-vis__img" src="assets/numeral.svg" alt="The numeral 26." loading="lazy" decoding="async"></figure></div>
+    </div></div>
+    <div class="st-scrolly__steps">
+  <div class="st-step" data-vis="v-26f00j" data-step-id="s-26f00m">
+    <div class="st-step__box">
+      
+      <p>One square on the calendar. Nothing about it is different from the twenty-five before it or the five after.</p>
+    </div>
+  </div>
+  <div class="st-step" data-vis="v-26f00j" data-step-id="s-26f00n">
+    <div class="st-step__box">
+      
+      <p>And yet twenty-two separate catastrophes — earthquakes, tsunamis, floods, a reactor fire, a siege, a mine explosion — have fallen on it since 1930.</p>
+    </div><script type="application/json" data-step-state>{"zoom":1.5,"focal":"68% 74%"}</script>
+  </div>
+  <div class="st-step" data-vis="v-26f00k" data-step-id="s-26f00o">
+    <div class="st-step__box">
+      
+      <p>Together they account for roughly <strong>330,000 deaths</strong>. Here is the record, place by place.</p>
+    </div>
+  </div>
+    </div>
+  </div>
+</section>
+
+<section class="st-scrolly st-scrolly--left" style="--graphic-w:60%;--step-gap:105vh;--trigger:50">
+  <div class="st-scrolly__inner">
+    <div class="st-scrolly__graphic"><div class="st-scrolly__stage">
+<div class="st-vis st-vis--map" data-vis-id="v-26f00p" data-vis-kind="map"><figure><div class="st-vis__host"></div><script type="application/json" data-vis-spec>{"mode":"live","center":[24,70],"zoom":3,"interactive":false,"tiles":"https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}","attrib":"Imagery &copy; Esri, Maxar, Earthstar Geographics","markers":[{"lat":28.17,"lng":85.38,"label":"Nepal, 2026"},{"lat":36.44,"lng":70.72,"label":"Hindu Kush, 2015"},{"lat":-7.8,"lng":110.36,"label":"Yogyakarta, 2006"},{"lat":19.076,"lng":72.877,"label":"Mumbai, 2005"},{"lat":3.316,"lng":95.854,"label":"Indian Ocean, 2004"},{"lat":29.11,"lng":58.36,"label":"Bam, 2003"},{"lat":36.13,"lng":68.7,"label":"Baghlan, 2002"},{"lat":23.42,"lng":70.31,"label":"Kutch, 2001"},{"lat":36.28,"lng":100.62,"label":"Gonghe, 1990"},{"lat":-8.4,"lng":124.13,"label":"Pantar, 1987"},{"lat":40.46,"lng":139.1,"label":"Akita, 1983"},{"lat":41.996,"lng":21.431,"label":"Skopje, 1963"},{"lat":40.91,"lng":35.89,"label":"Ladik, 1943"},{"lat":39.75,"lng":39.49,"label":"Erzincan, 1939"},{"lat":40.38,"lng":23.87,"label":"Lerissos, 1932"},{"lat":35.03,"lng":138.98,"label":"Izu, 1930"}]}</script><figcaption class="st-vis__label">Satellite base map, so no international boundary is drawn. Positions are approximate — the reported epicentre or worst-affected area.</figcaption></figure></div>
+<div class="st-vis st-vis--image" data-vis-id="v-26f00q" data-vis-kind="image" style="--vis-fit:cover;--vis-focal:50% 50%"><figure><img class="st-vis__img" src="assets/tsunami-aceh.webp" alt="A village near the coast of Sumatra in ruins after the 2004 tsunami." loading="lazy" decoding="async"><figcaption class="st-vis__label">U.S. Navy photo by Photographer&#39;s Mate 2nd Class Philip A. McDaniel, via Wikimedia Commons · Public domain</figcaption></figure></div>
+<div class="st-vis st-vis--image" data-vis-id="v-26f00r" data-vis-kind="image" style="--vis-fit:cover;--vis-focal:50% 50%"><figure><img class="st-vis__img" src="assets/bam-citadel.webp" alt="The mud-brick citadel of Arg-e Bam in Iran." loading="lazy" decoding="async"><figcaption class="st-vis__label">Aliafsah, via Wikimedia Commons · CC BY-SA 4.0</figcaption></figure></div>
+<div class="st-vis st-vis--image" data-vis-id="v-26f00s" data-vis-kind="image" style="--vis-fit:cover;--vis-focal:50% 50%"><figure><img class="st-vis__img" src="assets/gujarat-kutch.webp" alt="Chhatedi, a monument in the Kutch region of Gujarat." loading="lazy" decoding="async"><figcaption class="st-vis__label">Jugnu, via Wikimedia Commons · CC BY-SA 4.0</figcaption></figure></div>
+<div class="st-vis st-vis--image" data-vis-id="v-26f00u" data-vis-kind="image" style="--vis-fit:cover;--vis-focal:50% 50%"><figure><img class="st-vis__img" src="assets/prambanan.webp" alt="Candi Prambanan in Java, damaged in the 2006 earthquake." loading="lazy" decoding="async"><figcaption class="st-vis__label">Michael Gunther, via Wikimedia Commons · CC BY-SA 4.0</figcaption></figure></div>
+<div class="st-vis st-vis--image" data-vis-id="v-26f00t" data-vis-kind="image" style="--vis-fit:cover;--vis-focal:50% 50%"><figure><img class="st-vis__img" src="assets/skopje-ruins.webp" alt="Ruins in Skopje after the 1963 earthquake." loading="lazy" decoding="async"><figcaption class="st-vis__label">Unknown authorUnknown author, via Wikimedia Commons · Public domain</figcaption></figure></div>
+    </div></div>
+    <div class="st-scrolly__steps">
+  <div class="st-step" data-vis="v-26f00p" data-step-id="s-26f00v">
+    <div class="st-step__box">
+      <span class="st-step__num">26 AUGUST 2026</span>
+      <h3>Nepal flash floods</h3>
+<p>A massive flash flood swept through Nepal’s <strong>Rasuwa district</strong> and downstream areas after a sudden surge of water and debris entered the Bhote Koshi river system. It inundated settlements, washed away roads and bridges, and damaged hydropower projects.</p>
+<p>As of August 31, authorities reported <strong>over 900 deaths and nearly 4,500 missing</strong>.</p>
+    </div><script type="application/json" data-step-state>{"center":[28.17,85.38],"zoom":7,"markers":[{"lat":28.17,"lng":85.38,"label":"Nepal, 2026"}]}</script>
+  </div>
+  <div class="st-step" data-vis="v-26f00p" data-step-id="s-26f00w">
+    <div class="st-step__box">
+      <span class="st-step__num">26 DECEMBER 2004</span>
+      <h3>Indian Ocean tsunami</h3>
+<p>A magnitude <strong>9.1</strong> earthquake off the coast of Sumatra triggered a tsunami that swept across every country bordering the Indian Ocean. Indonesia, Sri Lanka, India and Thailand were worst affected.</p>
+<p>About <strong>228,000 people</strong> were killed or left missing and presumed dead — one of the deadliest natural disasters in recorded history.</p>
+    </div><script type="application/json" data-step-state>{"center":[3.316,95.854],"zoom":5,"markers":[{"lat":28.17,"lng":85.38,"label":"Nepal, 2026"},{"lat":3.316,"lng":95.854,"label":"Indian Ocean, 2004"}]}</script>
+  </div>
+  <div class="st-step" data-vis="v-26f00q" data-step-id="s-26f00x">
+    <div class="st-step__box">
+      
+      <p>Aceh, weeks later. Whole settlements on the Sumatran coast were simply removed.</p>
+    </div>
+  </div>
+  <div class="st-step" data-vis="v-26f00p" data-step-id="s-26f00y">
+    <div class="st-step__box">
+      <span class="st-step__num">26 DECEMBER 2003</span>
+      <h3>Bam earthquake</h3>
+<p>A magnitude <strong>6.6</strong> earthquake destroyed much of the historic Iranian city of <strong>Bam</strong>. Thousands of buildings collapsed. Estimates of the toll varied, with figures of about <strong>31,000</strong> widely reported.</p>
+    </div><script type="application/json" data-step-state>{"center":[29.11,58.36],"zoom":7,"markers":[{"lat":28.17,"lng":85.38,"label":"Nepal, 2026"},{"lat":3.316,"lng":95.854,"label":"Indian Ocean, 2004"},{"lat":29.11,"lng":58.36,"label":"Bam, 2003"}]}</script>
+  </div>
+  <div class="st-step" data-vis="v-26f00r" data-step-id="s-26f00z">
+    <div class="st-step__box">
+      
+      <p>Arg-e Bam, the mud-brick citadel at the heart of the city. Much of it came down in the quake.</p>
+    </div>
+  </div>
+  <div class="st-step" data-vis="v-26f00p" data-step-id="s-26f010">
+    <div class="st-step__box">
+      <span class="st-step__num">26 JANUARY 2001</span>
+      <h3>Gujarat earthquake</h3>
+<p>A powerful earthquake devastated large parts of Gujarat, particularly the <strong>Kutch</strong> region. More than <strong>166,000 people were injured</strong> and around <strong>20,000 killed</strong> — on Republic Day.</p>
+    </div><script type="application/json" data-step-state>{"center":[23.42,70.31],"zoom":7,"markers":[{"lat":28.17,"lng":85.38,"label":"Nepal, 2026"},{"lat":3.316,"lng":95.854,"label":"Indian Ocean, 2004"},{"lat":29.11,"lng":58.36,"label":"Bam, 2003"},{"lat":23.42,"lng":70.31,"label":"Kutch, 2001"}]}</script>
+  </div>
+  <div class="st-step" data-vis="v-26f00s" data-step-id="s-26f011">
+    <div class="st-step__box">
+      
+      <p>Kutch, the worst-affected district. The shaking was felt across western India and into Pakistan.</p>
+    </div>
+  </div>
+  <div class="st-step" data-vis="v-26f00p" data-step-id="s-26f012">
+    <div class="st-step__box">
+      <span class="st-step__num">26 JULY 2005</span>
+      <h3>Maharashtra floods</h3>
+<p>Mumbai received around <strong>944 mm of rain in 24 hours</strong>, inundating roads, homes and railway lines and bringing the city to a standstill. <strong>1,094 people</strong> were killed across Maharashtra.</p>
+    </div><script type="application/json" data-step-state>{"center":[19.076,72.877],"zoom":7,"markers":[{"lat":28.17,"lng":85.38,"label":"Nepal, 2026"},{"lat":3.316,"lng":95.854,"label":"Indian Ocean, 2004"},{"lat":29.11,"lng":58.36,"label":"Bam, 2003"},{"lat":23.42,"lng":70.31,"label":"Kutch, 2001"},{"lat":19.076,"lng":72.877,"label":"Mumbai, 2005"}]}</script>
+  </div>
+  <div class="st-step" data-vis="v-26f00p" data-step-id="s-26f013">
+    <div class="st-step__box">
+      <span class="st-step__num">26 MAY 2006</span>
+      <h3>Yogyakarta earthquake</h3>
+<p>A magnitude <strong>6.3</strong> earthquake struck near Yogyakarta on Java. Thousands of homes and buildings were destroyed and more than <strong>5,700 people</strong> were killed.</p>
+    </div><script type="application/json" data-step-state>{"center":[-7.8,110.36],"zoom":7,"markers":[{"lat":28.17,"lng":85.38,"label":"Nepal, 2026"},{"lat":3.316,"lng":95.854,"label":"Indian Ocean, 2004"},{"lat":29.11,"lng":58.36,"label":"Bam, 2003"},{"lat":23.42,"lng":70.31,"label":"Kutch, 2001"},{"lat":19.076,"lng":72.877,"label":"Mumbai, 2005"},{"lat":-7.8,"lng":110.36,"label":"Yogyakarta, 2006"}]}</script>
+  </div>
+  <div class="st-step" data-vis="v-26f00u" data-step-id="s-26f014">
+    <div class="st-step__box">
+      
+      <p>Prambanan, the ninth-century temple complex outside Yogyakarta, was among the structures damaged.</p>
+    </div>
+  </div>
+  <div class="st-step" data-vis="v-26f00p" data-step-id="s-26f015">
+    <div class="st-step__box">
+      <span class="st-step__num">26 DECEMBER 1939</span>
+      <h3>Erzincan earthquake</h3>
+<p>The oldest entry on this list, and among the deadliest. A magnitude <strong>7.8</strong> earthquake along the North Anatolian fault killed about <strong>32,700 people</strong>.</p>
+<p>Four years later, almost to the day, the <strong>Ladik earthquake</strong> struck the same country on another 26th, killing about 4,020.</p>
+    </div><script type="application/json" data-step-state>{"center":[39.75,39.49],"zoom":7,"markers":[{"lat":28.17,"lng":85.38,"label":"Nepal, 2026"},{"lat":3.316,"lng":95.854,"label":"Indian Ocean, 2004"},{"lat":29.11,"lng":58.36,"label":"Bam, 2003"},{"lat":23.42,"lng":70.31,"label":"Kutch, 2001"},{"lat":19.076,"lng":72.877,"label":"Mumbai, 2005"},{"lat":-7.8,"lng":110.36,"label":"Yogyakarta, 2006"},{"lat":39.75,"lng":39.49,"label":"Erzincan, 1939"}]}</script>
+  </div>
+  <div class="st-step" data-vis="v-26f00p" data-step-id="s-26f016">
+    <div class="st-step__box">
+      <span class="st-step__num">26 JULY 1963</span>
+      <h3>Skopje earthquake</h3>
+<p>A magnitude <strong>6.1</strong> earthquake devastated Skopje, then part of Yugoslavia. About <strong>1,070 people</strong> were killed and more than <strong>200,000 were left homeless</strong>.</p>
+    </div><script type="application/json" data-step-state>{"center":[41.996,21.431],"zoom":7,"markers":[{"lat":28.17,"lng":85.38,"label":"Nepal, 2026"},{"lat":3.316,"lng":95.854,"label":"Indian Ocean, 2004"},{"lat":29.11,"lng":58.36,"label":"Bam, 2003"},{"lat":23.42,"lng":70.31,"label":"Kutch, 2001"},{"lat":19.076,"lng":72.877,"label":"Mumbai, 2005"},{"lat":-7.8,"lng":110.36,"label":"Yogyakarta, 2006"},{"lat":39.75,"lng":39.49,"label":"Erzincan, 1939"},{"lat":41.996,"lng":21.431,"label":"Skopje, 1963"}]}</script>
+  </div>
+  <div class="st-step" data-vis="v-26f00t" data-step-id="s-26f017">
+    <div class="st-step__box">
+      
+      <p>Skopje afterwards. The city was substantially rebuilt in the decades that followed.</p>
+    </div>
+  </div>
+  <div class="st-step" data-vis="v-26f00p" data-step-id="s-26f018">
+    <div class="st-step__box">
+      <span class="st-step__num">ALL SIXTEEN</span>
+      <p>Those are the eight largest. Eight more natural disasters — in Afghanistan, China, Indonesia, Japan, Greece and the Hindu Kush — also fell on a 26th. All sixteen are marked here.</p>
+    </div><script type="application/json" data-step-state>{"center":[24,74],"zoom":2.6,"markers":[{"lat":28.17,"lng":85.38,"label":"Nepal, 2026"},{"lat":36.44,"lng":70.72,"label":"Hindu Kush, 2015"},{"lat":-7.8,"lng":110.36,"label":"Yogyakarta, 2006"},{"lat":19.076,"lng":72.877,"label":"Mumbai, 2005"},{"lat":3.316,"lng":95.854,"label":"Indian Ocean, 2004"},{"lat":29.11,"lng":58.36,"label":"Bam, 2003"},{"lat":36.13,"lng":68.7,"label":"Baghlan, 2002"},{"lat":23.42,"lng":70.31,"label":"Kutch, 2001"},{"lat":36.28,"lng":100.62,"label":"Gonghe, 1990"},{"lat":-8.4,"lng":124.13,"label":"Pantar, 1987"},{"lat":40.46,"lng":139.1,"label":"Akita, 1983"},{"lat":41.996,"lng":21.431,"label":"Skopje, 1963"},{"lat":40.91,"lng":35.89,"label":"Ladik, 1943"},{"lat":39.75,"lng":39.49,"label":"Erzincan, 1939"},{"lat":40.38,"lng":23.87,"label":"Lerissos, 1932"},{"lat":35.03,"lng":138.98,"label":"Izu, 1930"}]}</script>
+  </div>
+    </div>
+  </div>
+</section>
+
+<section class="st-units" data-units>
+  <div class="st-units__sticky">
+    <header class="st-units__head">
+      <h2 class="st-units__title">Every dot is a hundred people</h2>
+      <p class="st-units__sub">The sixteen natural disasters that fell on a 26th, smallest first. The scale is linear — keep scrolling.</p>
+      <p class="st-units__key"><i class="st-units__keydot"></i><span>each dot = 100 dead</span></p>
+    </header>
+    <div class="st-units__viewport">
+      <div class="st-units__track"></div>
+      <div class="st-units__seed" aria-hidden="true">
+        <span class="st-units__seeddot"></span>
+        <span class="st-units__seedcap">each dot = 100 dead</span>
+      </div>
+    </div>
+    <div class="st-units__now" aria-live="polite"></div>
+    <div class="st-units__rail"><div class="st-units__railbar"></div></div>
+    <p class="st-units__caption">One dot = 100 reported deaths. Tolls as reported by PTI; several are estimates and Nepal’s remains provisional.</p>
+  </div>
+  <script type="application/json" data-units-spec>{"perDot":100,"unitLabel":"dead","items":[{"label":"Nepal flash floods","sub":"Rasuwa district, Nepal","date":"26 AUGUST 2026","value":900,"note":"Still being counted. Nearly 4,500 people remain missing.","accent":""},{"label":"Hindu Kush earthquake","sub":"Afghanistan / Pakistan","date":"26 OCTOBER 2015","value":400,"note":"Felt across Afghanistan, Pakistan and northern India.","accent":""},{"label":"Yogyakarta earthquake","sub":"Java, Indonesia","date":"26 MAY 2006","value":5700,"note":"Thousands of homes destroyed across Java.","accent":""},{"label":"Maharashtra floods","sub":"Mumbai, India","date":"26 JULY 2005","value":1094,"note":"944 mm of rain fell on Mumbai in twenty-four hours.","accent":""},{"label":"Indian Ocean tsunami","sub":"Off Sumatra, Indonesia","date":"26 DECEMBER 2004","value":228000,"note":"Fourteen countries. This one bar is two-thirds of everything on this chart.","accent":""},{"label":"Bam earthquake","sub":"Bam, Iran","date":"26 DECEMBER 2003","value":31000,"note":"A city of mud-brick buildings, most of which fell.","accent":""},{"label":"Afghanistan earthquakes","sub":"Baghlan, Afghanistan","date":"26 MARCH 2002","value":1800,"note":"Mud-brick homes in Baghlan province came down overnight.","accent":""},{"label":"Gujarat earthquake","sub":"Kutch, India","date":"26 JANUARY 2001","value":20000,"note":"Republic Day, 2001. More than 166,000 people were injured.","accent":""},{"label":"Gonghe earthquake","sub":"Qinghai, China","date":"26 APRIL 1990","value":100,"note":"Magnitude 7. The smallest entry on the list, and still more than a hundred people.","accent":""},{"label":"Pantar earthquake and tsunami","sub":"Pantar, Indonesia","date":"26 NOVEMBER 1987","value":125,"note":"A magnitude 6.5 quake off a small Indonesian island.","accent":""},{"label":"Sea of Japan earthquake","sub":"Akita and Aomori, Japan","date":"26 MAY 1983","value":104,"note":"The tsunami, not the shaking, caused most of these deaths.","accent":""},{"label":"Skopje earthquake","sub":"Skopje, then Yugoslavia","date":"26 JULY 1963","value":1070,"note":"More than 200,000 people were also left homeless.","accent":""},{"label":"Ladik earthquake","sub":"Ladik-Samsun-Havza, Turkey","date":"26 NOVEMBER 1943","value":4020,"note":"Northern Turkey, four years after Erzincan — another 26th.","accent":""},{"label":"Erzincan earthquake","sub":"Erzincan, Turkey","date":"26 DECEMBER 1939","value":32700,"note":"The North Anatolian fault. Still among the deadliest quakes on record.","accent":""},{"label":"Lerissos earthquake","sub":"Chalkidiki, Greece","date":"26 SEPTEMBER 1932","value":330,"note":"Estimates range from about 160 to nearly 500.","accent":""},{"label":"North Izu earthquake","sub":"Izu peninsula, Japan","date":"26 NOVEMBER 1930","value":272,"note":"Landslides and fires added to the collapse.","accent":""}],"sort":true,"dotSize":null,"palette":null}</script>
+</section>
+
+<section class="st-text st-block st-wrap"><h2>Not only nature</h2>
+<p>The date does not confine itself to earthquakes and floods. Six of the twenty-two entries were made by people — a reactor pushed past its limits, a bomb in an airport crowd, ten gunmen arriving by sea.</p></section>
+
+<section class="st-scrolly st-scrolly--right" style="--graphic-w:60%;--step-gap:105vh;--trigger:50">
+  <div class="st-scrolly__inner">
+    <div class="st-scrolly__graphic"><div class="st-scrolly__stage">
+<div class="st-vis st-vis--map" data-vis-id="v-26f01c" data-vis-kind="map"><figure><div class="st-vis__host"></div><script type="application/json" data-vis-spec>{"mode":"live","center":[40,60],"zoom":3,"interactive":false,"tiles":"https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}","attrib":"Imagery &copy; Esri, Maxar, Earthstar Geographics","markers":[{"lat":36.27,"lng":43.38,"label":"Qaraqosh, 2023"},{"lat":34.56,"lng":69.21,"label":"Kabul, 2021"},{"lat":18.922,"lng":72.833,"label":"Mumbai, 2008"},{"lat":14.66,"lng":99.25,"label":"Lauda Air, 1991"},{"lat":51.389,"lng":30.099,"label":"Chernobyl, 1986"},{"lat":41.3,"lng":123.77,"label":"Benxihu, 1942"}]}</script><figcaption class="st-vis__label">Satellite base map. Positions are approximate.</figcaption></figure></div>
+<div class="st-vis st-vis--image" data-vis-id="v-26f01d" data-vis-kind="image" style="--vis-fit:cover;--vis-focal:50% 50%"><figure><img class="st-vis__img" src="assets/chernobyl.webp" alt="Reactor no. 4 at Chernobyl and the memorial in front of it." loading="lazy" decoding="async"><figcaption class="st-vis__label">Matti Paavonen, via Wikimedia Commons · CC BY-SA 3.0</figcaption></figure></div>
+<div class="st-vis st-vis--image" data-vis-id="v-26f01e" data-vis-kind="image" style="--vis-fit:cover;--vis-focal:50% 50%"><figure><img class="st-vis__img" src="assets/mumbai-taj.webp" alt="The Taj Mahal Palace Hotel, Mumbai." loading="lazy" decoding="async"><figcaption class="st-vis__label">Trakesht, via Wikimedia Commons · CC BY-SA 3.0</figcaption></figure></div>
+<div class="st-vis st-vis--image" data-vis-id="v-26f01f" data-vis-kind="image" style="--vis-fit:cover;--vis-focal:50% 50%"><figure><img class="st-vis__img" src="assets/kabul-airport.webp" alt="The evacuation at Hamid Karzai International Airport, August 2021." loading="lazy" decoding="async"><figcaption class="st-vis__label">U.S. Marine Corps photo by Sgt. Isaiah Campbell/U.S. Central Command P, via Wikimedia Commons · Public domain</figcaption></figure></div>
+    </div></div>
+    <div class="st-scrolly__steps">
+  <div class="st-step" data-vis="v-26f01c" data-step-id="s-26f01g">
+    <div class="st-step__box">
+      <span class="st-step__num">26 APRIL 1942</span>
+      <h3>Benxihu colliery disaster</h3>
+<p>A gas and coal dust explosion tore through the Benxihu coal mine in Liaoning. Carbon monoxide poisoning killed <strong>1,549 miners</strong> — one of the deadliest mining disasters in history.</p>
+    </div><script type="application/json" data-step-state>{"center":[41.3,123.77],"zoom":7,"markers":[{"lat":41.3,"lng":123.77,"label":"Benxihu, 1942"}]}</script>
+  </div>
+  <div class="st-step" data-vis="v-26f01c" data-step-id="s-26f01h">
+    <div class="st-step__box">
+      <span class="st-step__num">26 APRIL 1986</span>
+      <h3>Chernobyl nuclear disaster</h3>
+<p>Reactor no. 4 exploded during a safety test, releasing large amounts of radioactive material across parts of Europe. The immediate official death toll was <strong>31</strong>; long-term deaths attributable to radiation remain a matter of scientific estimation rather than a counted toll.</p>
+    </div><script type="application/json" data-step-state>{"center":[51.389,30.099],"zoom":7,"markers":[{"lat":41.3,"lng":123.77,"label":"Benxihu, 1942"},{"lat":51.389,"lng":30.099,"label":"Chernobyl, 1986"}]}</script>
+  </div>
+  <div class="st-step" data-vis="v-26f01d" data-step-id="s-26f01i">
+    <div class="st-step__box">
+      
+      <p>Reactor no. 4, now under its containment shelter. The exclusion zone around it is still in force forty years on.</p>
+    </div>
+  </div>
+  <div class="st-step" data-vis="v-26f01c" data-step-id="s-26f01j">
+    <div class="st-step__box">
+      <span class="st-step__num">26 MAY 1991</span>
+      <h3>Lauda Air Flight 004</h3>
+<p>A Boeing 767 flying Bangkok to Vienna broke apart over Thailand after an uncommanded deployment of an engine thrust reverser. <strong>All 223 people aboard</strong> were killed.</p>
+    </div><script type="application/json" data-step-state>{"center":[14.66,99.25],"zoom":7,"markers":[{"lat":41.3,"lng":123.77,"label":"Benxihu, 1942"},{"lat":51.389,"lng":30.099,"label":"Chernobyl, 1986"},{"lat":14.66,"lng":99.25,"label":"Lauda Air, 1991"}]}</script>
+  </div>
+  <div class="st-step" data-vis="v-26f01c" data-step-id="s-26f01k">
+    <div class="st-step__box">
+      <span class="st-step__num">26 NOVEMBER 2008</span>
+      <h3>Mumbai terror attacks</h3>
+<p>Ten Lashkar-e-Taiba gunmen launched coordinated attacks across the city, including at <strong>Chhatrapati Shivaji Maharaj Terminus</strong> and the <strong>Taj Mahal Palace Hotel</strong>. The siege lasted nearly three days.</p>
+<p><strong>166 victims</strong> were killed, nine attackers were killed, and more than 300 people were injured.</p>
+    </div><script type="application/json" data-step-state>{"center":[18.922,72.833],"zoom":7,"markers":[{"lat":41.3,"lng":123.77,"label":"Benxihu, 1942"},{"lat":51.389,"lng":30.099,"label":"Chernobyl, 1986"},{"lat":14.66,"lng":99.25,"label":"Lauda Air, 1991"},{"lat":18.922,"lng":72.833,"label":"Mumbai, 2008"}]}</script>
+  </div>
+  <div class="st-step" data-vis="v-26f01e" data-step-id="s-26f01l">
+    <div class="st-step__box">
+      
+      <p>The Taj Mahal Palace, one of the sites held during the three-day siege.</p>
+    </div>
+  </div>
+  <div class="st-step" data-vis="v-26f01c" data-step-id="s-26f01m">
+    <div class="st-step__box">
+      <span class="st-step__num">26 AUGUST 2021</span>
+      <h3>Kabul airport bombing</h3>
+<p>A suicide bomber from Islamic State-Khorasan province detonated an explosive near Hamid Karzai International Airport as thousands gathered during the US-led evacuation. At least <strong>183 people</strong> were killed, including 170 Afghan civilians and 13 US service members.</p>
+    </div><script type="application/json" data-step-state>{"center":[34.56,69.21],"zoom":7,"markers":[{"lat":41.3,"lng":123.77,"label":"Benxihu, 1942"},{"lat":51.389,"lng":30.099,"label":"Chernobyl, 1986"},{"lat":14.66,"lng":99.25,"label":"Lauda Air, 1991"},{"lat":18.922,"lng":72.833,"label":"Mumbai, 2008"},{"lat":34.56,"lng":69.21,"label":"Kabul, 2021"}]}</script>
+  </div>
+  <div class="st-step" data-vis="v-26f01f" data-step-id="s-26f01n">
+    <div class="st-step__box">
+      
+      <p>The airport during the evacuation, days before the bombing.</p>
+    </div>
+  </div>
+  <div class="st-step" data-vis="v-26f01c" data-step-id="s-26f01o">
+    <div class="st-step__box">
+      <span class="st-step__num">26 SEPTEMBER 2023</span>
+      <h3>Qaraqosh wedding hall fire</h3>
+<p>Indoor pyrotechnics ignited flammable material at a wedding hall near Mosul. The fire tore through the crowded venue, killing <strong>more than 100 people</strong>.</p>
+    </div><script type="application/json" data-step-state>{"center":[36.27,43.38],"zoom":7,"markers":[{"lat":41.3,"lng":123.77,"label":"Benxihu, 1942"},{"lat":51.389,"lng":30.099,"label":"Chernobyl, 1986"},{"lat":14.66,"lng":99.25,"label":"Lauda Air, 1991"},{"lat":18.922,"lng":72.833,"label":"Mumbai, 2008"},{"lat":34.56,"lng":69.21,"label":"Kabul, 2021"},{"lat":36.27,"lng":43.38,"label":"Qaraqosh, 2023"}]}</script>
+  </div>
+    </div>
+  </div>
+</section>
+
+<section class="st-scrolly st-scrolly--left" style="--graphic-w:62%;--step-gap:100vh;--trigger:50">
+  <div class="st-scrolly__inner">
+    <div class="st-scrolly__graphic"><div class="st-scrolly__stage">
+<div class="st-vis st-vis--image" data-vis-id="v-26f01q" data-vis-kind="image" style="--vis-fit:contain;--vis-focal:50% 50%"><figure><img class="st-vis__img" src="assets/era-1930s.svg" alt="Disasters on the 26th, 1930 to 1943." loading="lazy" decoding="async"></figure></div>
+<div class="st-vis st-vis--image" data-vis-id="v-26f01r" data-vis-kind="image" style="--vis-fit:contain;--vis-focal:50% 50%"><figure><img class="st-vis__img" src="assets/era-mid.svg" alt="Disasters on the 26th, 1963 to 1991." loading="lazy" decoding="async"></figure></div>
+<div class="st-vis st-vis--image" data-vis-id="v-26f01s" data-vis-kind="image" style="--vis-fit:contain;--vis-focal:50% 50%"><figure><img class="st-vis__img" src="assets/era-2000s.svg" alt="Disasters on the 26th, 2001 to 2008." loading="lazy" decoding="async"></figure></div>
+<div class="st-vis st-vis--image" data-vis-id="v-26f01t" data-vis-kind="image" style="--vis-fit:contain;--vis-focal:50% 50%"><figure><img class="st-vis__img" src="assets/era-now.svg" alt="Disasters on the 26th, 2015 to 2026." loading="lazy" decoding="async"></figure></div>
+    </div></div>
+    <div class="st-scrolly__steps">
+  <div class="st-step" data-vis="v-26f01q" data-step-id="s-26f01v">
+    <div class="st-step__box">
+      
+      <h3>The 1930s and 1940s</h3>
+<p>Five entries in fourteen years, at both ends of the scale: a Greek village, two Turkish earthquakes, a Japanese peninsula, and a coal mine in Liaoning.</p>
+    </div>
+  </div>
+  <div class="st-step" data-vis="v-26f01r" data-step-id="s-26f01w">
+    <div class="st-step__box">
+      
+      <h3>1963 to 1991</h3>
+<p>Then a long, quiet gap. Skopje stands almost alone for two decades before Chernobyl, and the entries that follow are smaller.</p>
+    </div>
+  </div>
+  <div class="st-step" data-vis="v-26f01s" data-step-id="s-26f01x">
+    <div class="st-step__box">
+      
+      <h3>2001 to 2008</h3>
+<p>Seven disasters in eight years — the densest stretch on the record, and the one that contains the tsunami.</p>
+    </div>
+  </div>
+  <div class="st-step" data-vis="v-26f01t" data-step-id="s-26f01y">
+    <div class="st-step__box">
+      
+      <h3>2015 to 2026</h3>
+<p>And the recent end: the Hindu Kush, Kabul, a wedding hall near Mosul, and now Nepal.</p>
+    </div>
+  </div>
+    </div>
+  </div>
+</section>
+
+<section class="st-text st-block st-wrap"><h2>The rest of the record</h2>
+<p>Seven more natural disasters fell on a 26th. They are smaller in the count only.</p>
+<h3>Hindu Kush earthquake — Afghanistan / Pakistan</h3>
+<p><em>26 October 2015.</em> A magnitude 7.5 earthquake struck the Hindu Kush region, affecting Afghanistan, Pakistan and parts of northern India. It reportedly killed about <strong>400 people</strong>, most of them in Pakistan and Afghanistan.</p>
+<h3>Afghanistan earthquakes — Baghlan, Afghanistan</h3>
+<p><em>26 March 2002.</em> A series of earthquakes struck northern Afghanistan overnight on March 25–26, devastating parts of Baghlan province. Mud-brick homes collapsed and thousands were left homeless. Early estimates put the toll as high as <strong>1,800</strong>, though later assessments varied significantly.</p>
+<h3>Gonghe earthquake — Qinghai, China</h3>
+<p><em>26 April 1990.</em> A magnitude 7 earthquake struck Qinghai province, causing severe damage in the Gonghe region and killing <strong>more than 100 people</strong>.</p>
+<h3>Pantar earthquake and tsunami — Pantar, Indonesia</h3>
+<p><em>26 November 1987.</em> A magnitude 6.5 earthquake in the Pantar area of Indonesia generated a tsunami. The disaster killed <strong>125 people</strong>.</p>
+<h3>Sea of Japan earthquake — Akita and Aomori, Japan</h3>
+<p><em>26 May 1983.</em> A magnitude 7.8 earthquake off northern Japan triggered a tsunami that hit coastal Akita and Aomori. The wave caused most of the casualties: <strong>104 killed</strong>.</p>
+<h3>Lerissos earthquake — Chalkidiki, Greece</h3>
+<p><em>26 September 1932.</em> A powerful earthquake struck the Chalkidiki peninsula, severely damaging Lerissos. Hundreds of houses were destroyed and a tsunami was recorded. Historical estimates of the toll range from <strong>about 160 to nearly 500</strong>.</p>
+<h3>North Izu earthquake — Izu peninsula, Japan</h3>
+<p><em>26 November 1930.</em> A magnitude 7.3 earthquake struck Japan’s Izu peninsula, with landslides and fires adding to the destruction. <strong>Around 250 people</strong> were killed; later catalogues record 272.</p></section>
+
+<section class="st-quote st-block st-wrap">
+  <blockquote>About 228,000 people were killed or left missing and presumed dead — one of the deadliest natural disasters in recorded history.</blockquote>
+  <cite>On the Indian Ocean tsunami, 26 December 2004</cite>
+</section>
+
+<section class="st-text st-block st-wrap"><h2>A note on the date</h2>
+<p>Dates recur. With thirty-one of them and a century of record-keeping, some number was always going to collect a heavy share of catastrophe, and the 26th has collected this one.</p>
+<p>What the list documents is not a property of the date. It is the ordinary arithmetic of a violent century, seen through a single square on the calendar — and, in each of these twenty-two entries, a great many people who did not come home.</p></section>
+
+<footer class="st-footer st-wrap">
+  <p><strong>Source:</strong> Press Trust of India, 31 August 2026.</p>
+<p>Death tolls are as reported in that copy; several are estimates and some remain provisional. Map positions are approximate. The base map is satellite imagery, which draws no international boundaries.</p>
+<p><strong>Photographs</strong></p>
+<ul>
+<li>pnepalensis — <em>nepal-valley</em> — CC BY-SA 4.0</li>
+<li>U.S. Navy photo by Photographer&#39;s Mate 2nd Class Philip A. McDaniel — <em>tsunami-aceh</em> — Public domain</li>
+<li>Aliafsah — <em>bam-citadel</em> — CC BY-SA 4.0</li>
+<li>Jugnu — <em>gujarat-kutch</em> — CC BY-SA 4.0</li>
+<li>Unknown authorUnknown author — <em>skopje-ruins</em> — Public domain</li>
+<li>Matti Paavonen — <em>chernobyl</em> — CC BY-SA 3.0</li>
+<li>Trakesht — <em>mumbai-taj</em> — CC BY-SA 3.0</li>
+<li>Michael Gunther — <em>prambanan</em> — CC BY-SA 4.0</li>
+<li>U.S. Marine Corps photo by Sgt. Isaiah Campbell/U.S. Central Command P — <em>kabul-airport</em> — Public domain</li>
+</ul>
+<p>Imagery © Esri, Maxar, Earthstar Geographics. Charts and graphics original, built in Scrollytelling Studio.</p>
+  <div class="st-share">
+    <a href="https://twitter.com/intent/tweet?text=The%20'26'%20factor%20%E2%80%94%20PTI%2C%20New%20Delhi&url=https%3A%2F%2Fdeepakscrollytelling.github.io%2Fstories%2Fthe-26-factor" target="_blank" rel="noopener">Share on X</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdeepakscrollytelling.github.io%2Fstories%2Fthe-26-factor" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:?subject=The%20'26'%20factor%20%E2%80%94%20PTI%2C%20New%20Delhi&body=https%3A%2F%2Fdeepakscrollytelling.github.io%2Fstories%2Fthe-26-factor">Email</a>
+  </div>
+</footer>
+</article>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+<script>
+/* ===========================================================================
+   Scrollytelling Studio — runtime engine
+   Activates a rendered story page: step detection, sticky visuals, charts,
+   maps, video. No dependencies (Leaflet is optional and only for live maps).
+   Ships verbatim with every exported article.
+   =========================================================================== */
+(function () {
+  'use strict';
+
+  var reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Everything that must be torn down when the page is re-rendered in the
+     editor's live preview. Harmless in a published article, which boots once. */
+  var disposables = [];
+  function keep(d) { disposables.push(d); return d; }
+  function teardown() {
+    disposables.forEach(function (d) {
+      try { (d.disconnect || d.destroy || d.remove).call(d); } catch (e) {}
+    });
+    disposables.length = 0;
+    scrollies.length = 0;
+  }
+
+  /* ---------------------------------------------------------------- utils */
+  function $(sel, root) { return (root || document).querySelector(sel); }
+  function $$(sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
+  function readJSON(el) {
+    if (!el) return null;
+    try { return JSON.parse(el.textContent); } catch (e) { return null; }
+  }
+  function clamp(v, lo, hi) { return v < lo ? lo : v > hi ? hi : v; }
+  function lerp(a, b, t) { return a + (b - a) * t; }
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  /* ==========================================================================
+     Reading progress
+     ========================================================================== */
+  function initProgress() {
+    var bar = $('.st-progress__bar');
+    if (!bar) return;
+    var ticking = false;
+    function update() {
+      var h = document.documentElement.scrollHeight - innerHeight;
+      var p = h > 0 ? clamp(scrollY / h, 0, 1) : 0;
+      bar.style.width = (p * 100).toFixed(2) + '%';
+      ticking = false;
+    }
+    addEventListener('scroll', function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    addEventListener('resize', update, { passive: true });
+    update();
+  }
+
+  /* ==========================================================================
+     Charts — inline SVG, no library
+     ========================================================================== */
+  var Chart = (function () {
+
+    var NS = 'http://www.w3.org/2000/svg';
+    function mk(tag, attrs, parent) {
+      var el = document.createElementNS(NS, tag);
+      if (attrs) for (var k in attrs) el.setAttribute(k, attrs[k]);
+      if (parent) parent.appendChild(el);
+      return el;
+    }
+    function set(el, attrs) {
+      for (var k in attrs) {
+        var v = attrs[k];
+        if (el.getAttribute(k) !== String(v)) el.setAttribute(k, v);
+      }
+    }
+
+    function niceNum(range, round) {
+      var exp = Math.floor(Math.log10(range));
+      var frac = range / Math.pow(10, exp);
+      var nf;
+      if (round) nf = frac < 1.5 ? 1 : frac < 3 ? 2 : frac < 7 ? 5 : 10;
+      else nf = frac <= 1 ? 1 : frac <= 2 ? 2 : frac <= 5 ? 5 : 10;
+      return nf * Math.pow(10, exp);
+    }
+    function ticks(min, max, count) {
+      if (min === max) { min -= 1; max += 1; }
+      /* Take the step from the actual span. Rounding the span up first (the
+         textbook version) overshoots on short ranges like a run of years and
+         leaves the axis with a single label. */
+      var step = niceNum((max - min) / Math.max(1, (count || 5) - 1), true);
+      /* Accumulating a float step drifts (0.2 * 3 = 0.6000000000000001), so
+         count in integers and round to the step's own precision. */
+      var dp = Math.max(0, -Math.floor(Math.log10(step)));
+      var out = [];
+      var first = Math.ceil(min / step);
+      for (var k = first; k * step <= max + step * 0.001; k++) {
+        out.push(Number((k * step).toFixed(dp)));
+      }
+      return out.length > 1 ? out : [min, max];
+    }
+    function fmt(n) {
+      var a = Math.abs(n);
+      if (a >= 1e9) return (n / 1e9).toFixed(a % 1e9 ? 1 : 0) + 'B';
+      if (a >= 1e6) return (n / 1e6).toFixed(a % 1e6 ? 1 : 0) + 'M';
+      if (a >= 1e3) return (n / 1e3).toFixed(a % 1e3 ? 1 : 0) + 'k';
+      return String(Math.round(n * 100) / 100);
+    }
+    function fmtX(v, isTime) {
+      if (!isTime) return String(v);
+      var d = new Date(v);
+      return isNaN(d) ? String(v) : d.getFullYear();
+    }
+
+    /* ----------------------------------------------------------------------
+       One chart. The DOM is built once and then only repositioned, so the CSS
+       transitions on bars, dots and lines actually run — rebuilding the markup
+       on every step would replace the elements mid-transition and the reader
+       would see values snap into place instead of moving.
+       ---------------------------------------------------------------------- */
+    function create(host, spec) {
+      var rows = spec.rows || [];
+      var xKey = spec.x;
+      var seriesKeys = spec.series || [];
+      var kind = spec.kind || 'line';
+      var palette = spec.palette || ['#c8452d', '#2d6ac8', '#1f9d78', '#c8952d', '#8a4fc8', '#c82d78'];
+      var isTime = !!spec.timeAxis;
+
+      var wrap = document.createElement('div');
+      wrap.className = 'st-chart';
+      wrap.innerHTML =
+        '<div>' +
+          (spec.title ? '<div class="st-chart__title">' + esc(spec.title) + '</div>' : '') +
+          (spec.subtitle ? '<div class="st-chart__sub">' + esc(spec.subtitle) + '</div>' : '') +
+        '</div>' +
+        '<div class="st-chart__plot"></div>' +
+        '<div class="st-chart__legend"></div>';
+      host.appendChild(wrap);
+
+      var plot = $('.st-chart__plot', wrap);
+      var legend = $('.st-chart__legend', wrap);
+      var svg = mk('svg', { preserveAspectRatio: 'none' }, plot);
+
+      /* --- persistent structure --- */
+      var gGrid   = mk('g', { 'class': 'grid' }, svg);
+      var gAxis   = mk('g', { 'class': 'axis tick' }, svg);
+      var gSeries = mk('g', { 'class': 'series-layer' }, svg);
+      var gAnnot  = mk('g', { 'class': 'annot-layer' }, svg);
+      var baseline = mk('line', {}, gAxis);
+
+      var MAX_TICKS = 9;
+      var yTickLines = [], yTickTexts = [], xTickTexts = [];
+      for (var i = 0; i < MAX_TICKS; i++) {
+        yTickLines.push(mk('line', { opacity: 0 }, gGrid));
+        yTickTexts.push(mk('text', { 'text-anchor': 'end', opacity: 0 }, gAxis));
+      }
+      for (var i = 0; i < 24; i++) {
+        xTickTexts.push(mk('text', { 'text-anchor': 'middle', opacity: 0 }, gAxis));
+      }
+
+      /* One group per series, with a fixed element per row. */
+      var parts = seriesKeys.map(function (key, si) {
+        var color = palette[si % palette.length];
+        var g = mk('g', { 'class': 'series', 'data-series': key }, gSeries);
+        var p = {
+          key: key, color: color, g: g,
+          area: mk('path', { 'class': 'area', fill: color, opacity: 0 }, g),
+          line: mk('path', { 'class': 'line', stroke: color, opacity: 0 }, g),
+          label: mk('text', { 'class': 'series-label', fill: color, opacity: 0 }, g),
+          bars: [], dots: []
+        };
+        rows.forEach(function () {
+          p.bars.push(mk('rect', { 'class': 'bar', fill: color, rx: 1.5, opacity: 0, height: 0 }, g));
+          p.dots.push(mk('circle', { 'class': 'dot', fill: color, opacity: 0, r: 0 }, g));
+        });
+        return p;
+      });
+
+      var annots = [];
+      for (var i = 0; i < 4; i++) {
+        annots.push({
+          line: mk('line', { 'class': 'annot__line', opacity: 0 }, gAnnot),
+          text: mk('text', { 'class': 'annot__text', opacity: 0 }, gAnnot)
+        });
+      }
+
+      var state = { visible: seriesKeys.slice(), highlight: [], annotations: [], xRange: null, yRange: null };
+      var W = 0, H = 0, first = true;
+
+      function xVal(r) {
+        var v = r[xKey];
+        if (isTime) { var d = new Date(v); return isNaN(d) ? +v : +d; }
+        return +v;
+      }
+      var categorical = kind === 'bar' || kind === 'column' ||
+        (rows.length && isNaN(xVal(rows[0])) && !isTime);
+
+      function draw() {
+        var r = plot.getBoundingClientRect();
+        W = Math.max(240, r.width);
+        H = Math.max(160, r.height);
+        set(svg, { viewBox: '0 0 ' + W + ' ' + H, width: W, height: H });
+
+        var m = { t: 12, r: spec.labelSeries ? 84 : 18, b: 34, l: 52 };
+        var iw = W - m.l - m.r, ih = H - m.t - m.b;
+        var vis = state.visible.length ? state.visible : seriesKeys;
+
+        /* --- y domain --- */
+        var yVals = [];
+        rows.forEach(function (row) {
+          vis.forEach(function (k) { var v = +row[k]; if (isFinite(v)) yVals.push(v); });
+        });
+        var zeroBased = kind === 'bar' || kind === 'column' || kind === 'area';
+        var yMin = state.yRange ? state.yRange[0]
+          : Math.min.apply(null, yVals.concat(zeroBased ? [0] : []));
+        var yMax = state.yRange ? state.yRange[1] : Math.max.apply(null, yVals);
+        if (!isFinite(yMin) || !isFinite(yMax)) { yMin = 0; yMax = 1; }
+        if (yMin === yMax) yMax = yMin + 1;
+        var yT = ticks(yMin, yMax, Math.max(3, Math.min(6, Math.round(ih / 60))));
+        if (!state.yRange) {
+          yMin = Math.min(yMin, yT[0]);
+          yMax = Math.max(yMax, yT[yT.length - 1]);
+        }
+        function sy(v) { return m.t + ih - ((v - yMin) / (yMax - yMin)) * ih; }
+        /* Values above a capped axis are clipped to the top rather than drawn
+           off-canvas, so a bar that overflows still reads as "off the scale". */
+        function syc(v) { return Math.max(m.t - 2, Math.min(m.t + ih, sy(v))); }
+
+        /* --- x scale --- */
+        var band = 0, sx, sxv, xT = [], xs;
+        if (categorical) {
+          band = iw / Math.max(1, rows.length);
+          sx = function (i) { return m.l + band * i + band / 2; };
+        } else {
+          xs = rows.map(xVal);
+          var xMin = state.xRange ? state.xRange[0] : Math.min.apply(null, xs);
+          var xMax = state.xRange ? state.xRange[1] : Math.max.apply(null, xs);
+          if (xMin === xMax) xMax = xMin + 1;
+          sx = function (i) { return m.l + ((xs[i] - xMin) / (xMax - xMin)) * iw; };
+          sxv = function (v) { return m.l + ((v - xMin) / (xMax - xMin)) * iw; };
+          xT = ticks(xMin, xMax, Math.max(2, Math.min(6, Math.round(iw / 110))));
+        }
+
+        /* --- axes --- */
+        yTickLines.forEach(function (ln, i) {
+          var v = yT[i];
+          if (v === undefined || sy(v) < m.t - 1 || sy(v) > m.t + ih + 1) { set(ln, { opacity: 0 }); return; }
+          set(ln, { x1: m.l, x2: m.l + iw, y1: sy(v).toFixed(1), y2: sy(v).toFixed(1), opacity: 1 });
+        });
+        yTickTexts.forEach(function (tx, i) {
+          var v = yT[i];
+          if (v === undefined || sy(v) < m.t - 1 || sy(v) > m.t + ih + 1) { set(tx, { opacity: 0 }); return; }
+          set(tx, { x: m.l - 9, y: (sy(v) + 4).toFixed(1), opacity: 1 });
+          tx.textContent = fmt(v);
+        });
+
+        var xLabels = [];
+        if (categorical) {
+          var widest = rows.reduce(function (a, row) { return Math.max(a, String(row[xKey]).length); }, 1);
+          var slot = widest * 7.2 + 16;
+          var every = Math.ceil(rows.length / Math.max(2, Math.floor(iw / slot)));
+          rows.forEach(function (row, i) {
+            if (i % every) return;
+            xLabels.push({ x: sx(i), t: String(row[xKey]) });
+          });
+        } else {
+          xT.forEach(function (v) {
+            var x = sxv(v);
+            if (x < m.l - 2 || x > m.l + iw + 2) return;
+            xLabels.push({ x: x, t: fmtX(v, isTime) });
+          });
+        }
+        xTickTexts.forEach(function (tx, i) {
+          var L = xLabels[i];
+          if (!L) { set(tx, { opacity: 0 }); return; }
+          set(tx, { x: L.x.toFixed(1), y: m.t + ih + 20, opacity: 1 });
+          tx.textContent = L.t;
+        });
+        set(baseline, { x1: m.l, x2: m.l + iw, y1: m.t + ih, y2: m.t + ih, opacity: 1 });
+
+        /* --- series --- */
+        parts.forEach(function (p) {
+          var shown = vis.indexOf(p.key) >= 0;
+          var dim = state.highlight.length && state.highlight.indexOf(p.key) < 0;
+          p.g.classList.toggle('is-dim', !!dim);
+          set(p.g, { opacity: shown ? 1 : 0 });
+          p.g.style.pointerEvents = shown ? '' : 'none';
+
+          if (kind === 'bar' || kind === 'column') {
+            var n = Math.max(1, vis.length);
+            var bw = (band * 0.72) / n;
+            var off = Math.max(0, vis.indexOf(p.key));
+            rows.forEach(function (row, i) {
+              var v = +row[p.key];
+              var bar = p.bars[i];
+              if (!isFinite(v) || !shown) { set(bar, { opacity: 0, height: 0, y: m.t + ih }); return; }
+              var y0 = syc(0), y1 = syc(v);
+              set(bar, {
+                x: (sx(i) - (band * 0.72) / 2 + off * bw).toFixed(1),
+                y: Math.min(y0, y1).toFixed(1),
+                width: Math.max(1, bw - 1.5).toFixed(1),
+                height: Math.max(0, Math.abs(y1 - y0)).toFixed(1),
+                opacity: 1
+              });
+            });
+            set(p.line, { opacity: 0 });
+            set(p.area, { opacity: 0 });
+            p.dots.forEach(function (d) { set(d, { opacity: 0 }); });
+          } else {
+            var pts = [];
+            rows.forEach(function (row, i) {
+              var v = +row[p.key];
+              if (isFinite(v)) pts.push([sx(i), syc(v)]);
+            });
+            if (!pts.length || !shown) {
+              set(p.line, { opacity: 0 });
+              set(p.area, { opacity: 0 });
+              set(p.label, { opacity: 0 });
+              p.dots.forEach(function (d) { set(d, { opacity: 0 }); });
+              p.bars.forEach(function (b) { set(b, { opacity: 0 }); });
+              return;
+            }
+            var d = pts.map(function (q, i) {
+              return (i ? 'L' : 'M') + q[0].toFixed(1) + ' ' + q[1].toFixed(1);
+            }).join('');
+            if (kind === 'area') {
+              var floor = syc(Math.max(0, yMin));
+              set(p.area, {
+                d: d + 'L' + pts[pts.length - 1][0].toFixed(1) + ' ' + floor.toFixed(1) +
+                       'L' + pts[0][0].toFixed(1) + ' ' + floor.toFixed(1) + 'Z',
+                opacity: 1
+              });
+            } else { set(p.area, { opacity: 0 }); }
+            set(p.line, { d: d, opacity: kind === 'scatter' ? 0 : 1 });
+            var showDots = kind === 'scatter' || spec.dots;
+            p.dots.forEach(function (dot, i) {
+              var q = pts[i];
+              if (!q || !showDots) { set(dot, { opacity: 0, r: 0 }); return; }
+              set(dot, { cx: q[0].toFixed(1), cy: q[1].toFixed(1), r: kind === 'scatter' ? 4.5 : 3, opacity: 1 });
+            });
+            p.bars.forEach(function (b) { set(b, { opacity: 0 }); });
+            if (spec.labelSeries) {
+              var last = pts[pts.length - 1];
+              set(p.label, { x: (last[0] + 9).toFixed(1), y: last[1].toFixed(1), opacity: 1 });
+              p.label.textContent = p.key;
+            } else { set(p.label, { opacity: 0 }); }
+          }
+        });
+
+        /* --- annotations --- */
+        var list = state.annotations || [];
+        annots.forEach(function (a, i) {
+          var cfg = list[i];
+          if (!cfg) { set(a.line, { opacity: 0 }); set(a.text, { opacity: 0 }); return; }
+          if (cfg.y != null) {
+            var y = syc(+cfg.y);
+            set(a.line, { x1: m.l, x2: m.l + iw, y1: y.toFixed(1), y2: y.toFixed(1), opacity: 1 });
+            set(a.text, { x: m.l + 6, y: (y - 7).toFixed(1), 'text-anchor': 'start', opacity: 1 });
+          } else if (cfg.at != null) {
+            var idx = categorical
+              ? rows.findIndex(function (row) { return String(row[xKey]) === String(cfg.at); })
+              : rows.findIndex(function (row) { return xVal(row) >= (isTime ? +new Date(cfg.at) : +cfg.at); });
+            if (idx < 0) { set(a.line, { opacity: 0 }); set(a.text, { opacity: 0 }); return; }
+            var x = sx(idx);
+            set(a.line, { x1: x.toFixed(1), x2: x.toFixed(1), y1: m.t, y2: m.t + ih, opacity: 1 });
+            var anchor = x > m.l + iw * 0.7 ? 'end' : 'start';
+            set(a.text, {
+              x: (x + (anchor === 'end' ? -7 : 7)).toFixed(1), y: m.t + 14,
+              'text-anchor': anchor, opacity: 1
+            });
+          } else { set(a.line, { opacity: 0 }); set(a.text, { opacity: 0 }); return; }
+          a.text.textContent = cfg.text || '';
+        });
+
+        /* --- legend --- */
+        if (spec.legend !== false && seriesKeys.length > 1 && !spec.labelSeries) {
+          legend.innerHTML = parts.map(function (p) {
+            if (vis.indexOf(p.key) < 0) return '';
+            var dim = state.highlight.length && state.highlight.indexOf(p.key) < 0;
+            return '<span style="opacity:' + (dim ? 0.35 : 1) + '"><i style="background:' +
+              p.color + '"></i>' + esc(p.key) + '</span>';
+          }).join('');
+        } else { legend.innerHTML = ''; }
+
+        /* Let the first paint land before transitions are allowed to run,
+           otherwise everything animates in from zero on page load. */
+        if (first) {
+          first = false;
+          wrap.classList.add('is-built');
+        }
+      }
+
+      var ro = keep(new ResizeObserver(function () { draw(); }));
+      ro.observe(plot);
+
+      return {
+        el: wrap,
+        setState: function (s) {
+          state.visible = s && s.series && s.series.length ? s.series : seriesKeys.slice();
+          state.highlight = (s && s.highlight) || [];
+          state.annotations = (s && s.annotations) || [];
+          state.xRange = (s && s.xRange) || null;
+          state.yRange = (s && s.yRange) || null;
+          draw();
+        },
+        draw: draw
+      };
+    }
+
+    return { create: create };
+  })();
+
+  /* ==========================================================================
+     Maps
+     ========================================================================== */
+  var MapVis = (function () {
+    function createLeaflet(host, spec) {
+      var holder = document.createElement('div');
+      holder.className = 'st-map';
+      host.appendChild(holder);
+      var inner = document.createElement('div');
+      inner.style.cssText = 'width:100%;height:100%';
+      holder.appendChild(inner);
+
+      /* Every free tile source asks for credit; show whichever applies. */
+      var attrib = document.createElement('div');
+      attrib.className = 'st-map__attrib';
+      attrib.innerHTML = spec.attrib || 'Imagery &copy; Esri, Maxar, Earthstar Geographics';
+      holder.appendChild(attrib);
+
+      var map = null, markers = [];
+      function ensure() {
+        if (map || typeof L === 'undefined') return map;
+        map = L.map(inner, {
+          zoomControl: false, attributionControl: false,
+          scrollWheelZoom: false, dragging: !!spec.interactive,
+          keyboard: false, doubleClickZoom: false, touchZoom: !!spec.interactive
+        });
+        /* Default to satellite imagery, which draws no international
+           boundaries. A basemap that draws them takes a position on disputed
+           ones — in India, showing PoK or Aksai Chin outside the country is a
+           legal problem — so boundaries are opt-in, not the default. */
+        L.tileLayer(spec.tiles || 'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+          { maxZoom: 19, crossOrigin: true }).addTo(map);
+        map.setView(spec.center || [20, 0], spec.zoom || 2);
+
+        /* The sticky graphic changes size with the window, and in the editor
+           with the device preview. Leaflet needs telling each time. */
+        var ro = new ResizeObserver(function () { if (map) map.invalidateSize(false); });
+        ro.observe(inner);
+
+        keep({ disconnect: function () {
+          ro.disconnect();
+          if (map) { map.remove(); map = null; }
+        } });
+        return map;
+      }
+
+      return {
+        el: holder,
+        setState: function (s) {
+          var m = ensure();
+          if (!m) return;
+          setTimeout(function () { m.invalidateSize(); }, 30);
+          markers.forEach(function (mk) { m.removeLayer(mk); });
+          markers = [];
+          ((s && s.markers) || spec.markers || []).forEach(function (pt) {
+            var icon = L.divIcon({ className: '', html: '<div class="st-map__marker"></div>', iconSize: [14, 14], iconAnchor: [7, 7] });
+            var mk = L.marker([pt.lat, pt.lng], { icon: icon }).addTo(m);
+            if (pt.label) mk.bindTooltip(pt.label, { permanent: true, direction: 'right', offset: [10, 0], className: 'st-map__tip' });
+            markers.push(mk);
+          });
+          var c = (s && s.center) || spec.center || [20, 0];
+          var z = (s && s.zoom != null) ? s.zoom : (spec.zoom || 2);
+          if (reduceMotion) m.setView(c, z, { animate: false });
+          else m.flyTo(c, z, { duration: 1.5, easeLinearity: 0.22 });
+        },
+        resize: function () { if (map) map.invalidateSize(); }
+      };
+    }
+
+    /* Zero-dependency alternative: pan/zoom a static image. */
+    function createImage(host, spec) {
+      var holder = document.createElement('div');
+      holder.className = 'st-imgmap';
+      var img = document.createElement('img');
+      img.src = spec.src; img.alt = spec.alt || '';
+      img.loading = 'lazy'; img.decoding = 'async';
+      holder.appendChild(img);
+      host.appendChild(holder);
+      return {
+        el: holder,
+        setState: function (s) {
+          var z = (s && s.zoom) || 1;
+          var fx = (s && s.focal && s.focal[0] != null) ? s.focal[0] : 50;
+          var fy = (s && s.focal && s.focal[1] != null) ? s.focal[1] : 50;
+          img.style.scale = z;
+          img.style.translate = 'calc(-50% + ' + ((50 - fx) * z).toFixed(2) + '%) calc(-50% + ' + ((50 - fy) * z).toFixed(2) + '%)';
+        }
+      };
+    }
+
+    return { createLeaflet: createLeaflet, createImage: createImage };
+  })();
+
+  /* ==========================================================================
+     Unit chart — one dot per N, on a strictly linear scale.
+
+     The whole point is that the scale is NOT compressed: 228,000 really is
+     2,280 times 100, and the reader scrolls that whole distance. Vertical page
+     scroll is converted into horizontal travel across a track much wider than
+     the screen, which is what makes a linear scale readable at this range.
+     ========================================================================== */
+  var Units = (function () {
+
+    var NS = 'http://www.w3.org/2000/svg';
+
+    function build(block) {
+      var spec = readJSON($('script[data-units-spec]', block));
+      if (!spec || !spec.items || !spec.items.length) return null;
+
+      var viewport = $('.st-units__viewport', block);
+      var track    = $('.st-units__track', block);
+      var nowEl    = $('.st-units__now', block);
+      var railbar  = $('.st-units__railbar', block);
+      var keyEl    = $('.st-units__key span', block);
+      var seed     = $('.st-units__seed', block);
+      var seedDot  = $('.st-units__seeddot', block);
+
+      var items = spec.items.slice();
+      if (spec.sort !== false) items.sort(function (a, b) { return a.value - b.value; });
+
+      var perDot = spec.perDot || 100;
+      var laid = null, plan = null, svgEl = null, labels = [];
+      var shown = -1, current = -1;
+
+      if (keyEl) keyEl.textContent = 'each dot = ' + perDot.toLocaleString() +
+        (spec.unitLabel ? ' ' + spec.unitLabel : '');
+
+      /* ------------------------------------------------------------- layout */
+      /* Drawn once at a base pitch. The camera then zooms out as the figures
+         grow, rather than panning past them: an entry ten times bigger is ten
+         times as many dots — strictly linear — but the previous one stays in
+         frame, shrinking, so the comparison survives. */
+      function layout() {
+        var vw = viewport.clientWidth || 1;
+        var vh = viewport.clientHeight || 1;
+        var narrow = vw < 640;
+
+        var bandH = narrow ? 108 : 116;              // label band, screen-space
+        var fieldH = Math.max(70, vh - bandH - 8);
+
+        var pitch = 14;                              // base, before zoom
+        var dot   = spec.dotSize || 10.5;
+        var rows  = narrow ? 14 : 18;
+
+        var gap = 90;                                 // base gap between blocks
+        var x = 0;
+        var blocks = [];
+        for (var i = 0; i < items.length; i++) {
+          var dots = Math.max(1, Math.round(items[i].value / perDot));
+          var cols = Math.ceil(dots / rows);
+          var w = cols * pitch;
+          blocks.push({ item: items[i], dots: dots, cols: cols, x: x, w: w });
+          x += w + gap;
+        }
+
+        return { blocks: blocks, baseW: x, rows: rows, pitch: pitch, dot: dot, gap: gap,
+                 vw: vw, vh: vh, narrow: narrow, bandH: bandH, fieldH: fieldH,
+                 fieldCY: bandH + fieldH / 2 };
+      }
+
+      /* What span of the base track should fill the frame at entry i? From the
+         start of the previous entry to the end of this one. */
+      function frameFor(i, backTo) {
+        var B = laid.blocks;
+        var a = Math.max(0, i - (backTo == null ? 1 : backTo));
+        var pad = laid.gap * 0.6;
+        return { l: B[a].x - pad, r: B[i].x + B[i].w + pad };
+      }
+      function camera(f) {
+        var span = Math.max(1, f.r - f.l);
+        var maxScale = (laid.narrow ? 44 : 58) / laid.dot;      // biggest a dot gets
+        var s = Math.min(laid.vw / span, maxScale);
+        /* When the span is small enough that the cap bites, centre it instead. */
+        var tx = (laid.vw - span * s) / 2 - f.l * s;
+        if (span * s > laid.vw) tx = -f.l * s;
+        return { s: s, tx: tx };
+      }
+      function lerpCam(a, b, t) { return { s: lerp(a.s, b.s, t), tx: lerp(a.tx, b.tx, t) }; }
+
+      /* ------------------------------------------------------------ timeline */
+      function buildPlan(L) {
+        var intro = L.narrow ? 420 : 500;
+        var hold  = L.narrow ? 190 : 240;
+        var move  = L.narrow ? 260 : 320;
+        var segs = [{ kind: 'intro', len: intro }];
+        for (var i = 0; i < L.blocks.length; i++) {
+          segs.push({ kind: 'hold', i: i, len: hold });
+          if (i < L.blocks.length - 1) segs.push({ kind: 'move', i: i, len: move });
+        }
+        /* Sit with the largest entry, then pull back once so it can be seen
+           against the two before it before the story moves on. */
+        segs.push({ kind: 'settle', i: L.blocks.length - 1, len: hold });
+        segs.push({ kind: 'pullback', i: L.blocks.length - 1, len: move * 1.4 });
+        segs.push({ kind: 'compare', i: L.blocks.length - 1, len: hold * 1.5 });
+
+        var total = 0;
+        for (var k = 0; k < segs.length; k++) { segs[k].at = total; total += segs[k].len; }
+        return { segs: segs, total: total };
+      }
+
+      function resolve(px) {
+        var P = plan, n = laid.blocks.length;
+        for (var k = 0; k < P.segs.length; k++) {
+          var sg = P.segs[k];
+          if (px > sg.at + sg.len && k < P.segs.length - 1) continue;
+          var t = sg.len > 0 ? clamp((px - sg.at) / sg.len, 0, 1) : 1;
+          if (sg.kind === 'intro')    return { cam: camera(frameFor(0)), idx: 0, intro: t };
+          if (sg.kind === 'hold')     return { cam: camera(frameFor(sg.i)), idx: sg.i, intro: 1 };
+          if (sg.kind === 'move')     return { cam: lerpCam(camera(frameFor(sg.i)), camera(frameFor(sg.i + 1)), t),
+                                               idx: sg.i + (t > 0.55 ? 1 : 0), intro: 1 };
+          if (sg.kind === 'settle')   return { cam: camera(frameFor(n - 1)), idx: n - 1, intro: 1 };
+          if (sg.kind === 'pullback') return { cam: lerpCam(camera(frameFor(n - 1)), camera(frameFor(n - 1, 3)), t),
+                                               idx: n - 1, intro: 1, wide: t };
+          return { cam: camera(frameFor(n - 1, 3)), idx: n - 1, intro: 1, wide: 1 };
+        }
+        return { cam: camera(frameFor(0)), idx: 0, intro: 1 };
+      }
+
+      /* -------------------------------------------------------------- paint */
+      function paint() {
+        laid = layout();
+        plan = buildPlan(laid);
+        shown = -1; current = -1;
+        labels = [];
+
+        track.innerHTML = '';
+        track.style.width = '100%';
+        track.style.transform = '';
+
+        var svg = document.createElementNS(NS, 'svg');
+        svg.setAttribute('class', 'st-units__svg');
+        svg.setAttribute('width', laid.vw);
+        svg.setAttribute('height', laid.vh);
+        svg.setAttribute('viewBox', '0 0 ' + laid.vw + ' ' + laid.vh);
+        svg.style.overflow = 'visible';
+
+        var g = document.createElementNS(NS, 'g');
+        g.setAttribute('class', 'st-units__cam');
+        svg.appendChild(g);
+
+        var colsH = laid.rows * laid.pitch;
+        laid.blocks.forEach(function (b, bi) {
+          var r = laid.dot / 2, pts = '';
+          for (var d = 0; d < b.dots; d++) {
+            var col = Math.floor(d / laid.rows), row = d % laid.rows;
+            var cx = (b.x + col * laid.pitch + r).toFixed(1);
+            var cy = (row * laid.pitch + r - colsH / 2).toFixed(1);   // centred on 0
+            pts += 'M' + cx + ' ' + cy + 'm' + (-r) + ' 0a' + r + ' ' + r + ' 0 1 0 ' + (r * 2) + ' 0a' + r + ' ' + r + ' 0 1 0 ' + (-r * 2) + ' 0';
+          }
+          var grp = document.createElementNS(NS, 'g');
+          grp.setAttribute('class', 'st-units__grp');
+          grp.setAttribute('data-i', bi);
+          var path = document.createElementNS(NS, 'path');
+          path.setAttribute('class', 'st-units__dots');
+          path.setAttribute('d', pts);
+          grp.appendChild(path);
+          g.appendChild(grp);
+        });
+
+        track.appendChild(svg);
+        svgEl = { svg: svg, cam: g };
+
+        /* Labels live in screen space at a fixed size, so zooming out never
+           shrinks the type. Only the current entry and the one before it are
+           labelled — anything older is a block of dots for comparison, and the
+           caption names whatever is current. */
+        laid.blocks.forEach(function (b, bi) {
+          var el = document.createElement('div');
+          el.className = 'st-units__label';
+          el.dataset.i = bi;
+          el.innerHTML =
+            (b.item.date ? '<span class="st-units__date">' + esc(b.item.date) + '</span>' : '') +
+            '<strong>' + esc(b.item.label) + '</strong>' +
+            '<b class="st-units__val">' + Number(b.item.value).toLocaleString() + '</b>';
+          track.appendChild(el);
+          labels.push(el);
+        });
+
+        block.style.height = (plan.total + laid.vh) + 'px';
+        update();
+      }
+
+      /* ------------------------------------------------------------- scroll */
+      function update() {
+        if (!laid || !plan || !svgEl) return;
+        var rect = block.getBoundingClientRect();
+        var px = clamp(-rect.top, 0, plan.total);
+        var r = resolve(px);
+        var cam = r.cam;
+
+        svgEl.cam.setAttribute('transform',
+          'translate(' + cam.tx.toFixed(2) + ',' + laid.fieldCY.toFixed(1) + ') scale(' + cam.s.toFixed(4) + ')');
+        if (railbar) railbar.style.width = (px / plan.total * 100).toFixed(2) + '%';
+
+        if (r.idx !== shown) {
+          shown = r.idx;
+          $$('.st-units__grp', svgEl.cam).forEach(function (gEl, i) {
+            gEl.classList.toggle('is-in', i <= shown);
+          });
+        }
+        if (r.idx !== current) {
+          current = r.idx;
+          $$('.st-units__grp', svgEl.cam).forEach(function (gEl, i) {
+            gEl.classList.toggle('is-active', i === current);
+          });
+          var it = laid.blocks[current].item;
+          if (nowEl) {
+            nowEl.innerHTML =
+              '<strong>' + esc(it.label) + '</strong>' +
+              (it.sub ? '<span class="st-units__where">' + esc(it.sub) + '</span>' : '') +
+              (it.note ? '<span>' + esc(it.note) + '</span>' : '') +
+              '<b>' + Number(it.value).toLocaleString() + (spec.unitLabel ? ' ' + esc(spec.unitLabel) : '') + '</b>';
+          }
+        }
+
+        /* Reposition the two live labels over their blocks. */
+        var showFrom = Math.max(0, current - 1);
+        for (var i = 0; i < labels.length; i++) {
+          var el = labels[i];
+          var on = (i >= showFrom && i <= current) && r.intro >= 1 && !r.wide;
+          if (!on) { el.classList.remove('is-in', 'is-active'); continue; }
+          var b = laid.blocks[i];
+          var left = cam.tx + b.x * cam.s;
+          var wide = Math.max(b.w * cam.s, 90);
+          el.style.left = Math.max(4, Math.min(left, laid.vw - 150)).toFixed(1) + 'px';
+          el.style.width = Math.min(Math.max(wide, 110), laid.narrow ? 170 : 240).toFixed(1) + 'px';
+          el.style.top = ((i === current ? 0 : 1) * (laid.bandH / 2)) + 'px';
+          el.classList.add('is-in');
+          el.classList.toggle('is-active', i === current);
+        }
+
+        /* --- the opening beat --- */
+        if (seed) {
+          var q = r.intro;
+          if (q < 1) {
+            var b0 = laid.blocks[0];
+            var toX = cam.tx + (b0.x + laid.dot / 2) * cam.s;
+            var toY = laid.fieldCY;
+            var e = q * q * (3 - 2 * q);
+            var rad = lerp(laid.narrow ? 44 : 60, (laid.dot / 2) * cam.s, e);
+            var cx = lerp(laid.vw / 2, toX, e);
+            var cy = lerp(laid.vh * 0.44, toY, e);
+            seed.hidden = false;
+            seedDot.style.width = seedDot.style.height = (rad * 2).toFixed(1) + 'px';
+            seedDot.style.transform = 'translate(' + (cx - rad).toFixed(1) + 'px,' + (cy - rad).toFixed(1) + 'px)';
+            var cap = $('.st-units__seedcap', block);
+            if (cap) {
+              cap.style.opacity = (1 - Math.min(1, q * 1.6)).toFixed(2);
+              cap.style.top = (cy + rad + (laid.narrow ? 34 : 42)) + 'px';
+            }
+            svgEl.svg.style.opacity = e.toFixed(2);
+            if (nowEl) nowEl.style.opacity = Math.max(0, (q - 0.65) / 0.35).toFixed(2);
+          } else if (!seed.hidden) {
+            seed.hidden = true;
+            svgEl.svg.style.opacity = 1;
+            if (nowEl) nowEl.style.opacity = 1;
+          }
+        }
+      }
+
+      paint();
+      var ro = keep(new ResizeObserver(function () { paint(); }));
+      ro.observe(viewport);
+      return { update: update, repaint: paint };
+    }
+
+    return { build: build };
+  })();
+
+  /* ==========================================================================
+     Scrolly blocks
+
+     Activation is computed from geometry on each frame rather than driven by
+     IntersectionObserver crossings. Crossings miss the case where the reader
+     arrives at a position without passing through it — a restored scroll
+     position, an anchor link, a jump from the editor's outline — which would
+     otherwise leave the wrong graphic on screen.
+     ========================================================================== */
+  var scrollies = [];
+
+  function initScrolly(block) {
+    var steps = $$('.st-step', block);
+    var visuals = $$('.st-vis', block);
+    if (!steps.length) return;
+
+    var byId = {};
+    visuals.forEach(function (v) { byId[v.dataset.visId] = v; });
+
+    /* Instantiate dynamic visuals (charts, maps) once per visual element. */
+    var drivers = {};
+    visuals.forEach(function (v) {
+      var kind = v.dataset.visKind;
+      var host = $('.st-vis__host', v) || v;
+      var spec = readJSON($('script[data-vis-spec]', v));
+      if (kind === 'chart' && spec) {
+        drivers[v.dataset.visId] = Chart.create(host, spec);
+      } else if (kind === 'map' && spec) {
+        drivers[v.dataset.visId] = spec.mode === 'image'
+          ? MapVis.createImage(host, spec)
+          : MapVis.createLeaflet(host, spec);
+      }
+    });
+
+    var current = -1;
+
+    function activate(i) {
+      if (i === current || i < 0 || i >= steps.length) return;
+      current = i;
+      var step = steps[i];
+      steps.forEach(function (s, n) { s.classList.toggle('is-active', n === i); });
+
+      var visId = step.dataset.vis;
+      visuals.forEach(function (v) {
+        var on = v.dataset.visId === visId;
+        v.classList.toggle('is-active', on);
+        var vid = $('video', v);
+        if (vid) {
+          if (on) { var p = vid.play(); if (p && p.catch) p.catch(function () {}); }
+          else vid.pause();
+        }
+      });
+
+      /* Per-step overrides for the sticky visual (zoom, focal, chart/map state) */
+      var vis = byId[visId];
+      var drv = drivers[visId];
+      if (vis) {
+        var over = readJSON($('script[data-step-state]', step));
+        if (over) {
+          if (over.zoom != null) vis.style.setProperty('--vis-zoom', over.zoom);
+          if (over.focal) vis.style.setProperty('--vis-focal', over.focal);
+          if (over.fit) vis.style.setProperty('--vis-fit', over.fit);
+        } else {
+          vis.style.removeProperty('--vis-zoom');
+        }
+        if (drv && drv.setState) drv.setState(over || null);
+      }
+
+      block.dispatchEvent(new CustomEvent('st:step', {
+        detail: { index: i, id: step.dataset.stepId }, bubbles: true
+      }));
+    }
+
+    /* Which step owns the trigger line right now? */
+    function measure() {
+      var rect = block.getBoundingClientRect();
+      var vh = innerHeight || document.documentElement.clientHeight;
+
+      /* Cheap reject when the block is nowhere near the screen. */
+      if (rect.bottom < -vh || rect.top > vh * 2) return;
+
+      var pct = parseFloat(getComputedStyle(block).getPropertyValue('--trigger'));
+      if (!isFinite(pct)) pct = 50;
+      var line = vh * (pct / 100);
+
+      var idx = 0;
+      for (var i = 0; i < steps.length; i++) {
+        var r = steps[i].getBoundingClientRect();
+        if (r.top <= line && r.bottom > line) { idx = i; break; }
+        /* Past the line entirely: this step and everything above it are done. */
+        if (r.bottom <= line) idx = i;
+      }
+      activate(idx);
+    }
+
+    activate(0);
+    scrollies.push({ measure: measure });
+    keep({ disconnect: function () {
+      var i = scrollies.findIndex(function (s) { return s.measure === measure; });
+      if (i >= 0) scrollies.splice(i, 1);
+    } });
+    measure();
+  }
+
+  /* One shared, frame-throttled loop for every scrolly block on the page. */
+  var scrollTick = false;
+  function onScroll() {
+    if (scrollTick || !scrollies.length) return;
+    scrollTick = true;
+    requestAnimationFrame(function () {
+      scrollTick = false;
+      for (var i = 0; i < scrollies.length; i++) scrollies[i].measure();
+    });
+  }
+
+  function bindScroll() {
+    addEventListener('scroll', onScroll, { passive: true });
+    addEventListener('resize', onScroll, { passive: true });
+    keep({ disconnect: function () {
+      removeEventListener('scroll', onScroll);
+      removeEventListener('resize', onScroll);
+    } });
+  }
+
+  /* ==========================================================================
+     Standalone media
+     ========================================================================== */
+  function initAutoVideo() {
+    var vids = $$('video[data-autoplay]');
+    if (!vids.length) return;
+    var io = keep(new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { var p = e.target.play(); if (p && p.catch) p.catch(function () {}); }
+        else e.target.pause();
+      });
+    }, { threshold: 0.25 }));
+    vids.forEach(function (v) { io.observe(v); });
+  }
+
+  /* Lazily swap data-src → src for iframes so embeds don't block first paint. */
+  function initLazyEmbeds() {
+    var frames = $$('iframe[data-src]');
+    if (!frames.length) return;
+    var io = keep(new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.src = e.target.dataset.src;
+        e.target.removeAttribute('data-src');
+        io.unobserve(e.target);
+      });
+    }, { rootMargin: '400px 0px' }));
+    frames.forEach(function (f) { io.observe(f); });
+  }
+
+  /* ==========================================================================
+     Boot
+     ========================================================================== */
+  function boot() {
+    teardown();
+    initProgress();
+    initAutoVideo();
+    initLazyEmbeds();
+    $$('.st-scrolly').forEach(initScrolly);
+    $$('.st-units').forEach(function (b) {
+      var u = Units.build(b);
+      if (u) { scrollies.push({ measure: u.update }); keep({ disconnect: function () {} }); }
+    });
+    if (scrollies.length) bindScroll();
+    document.documentElement.classList.add('st-ready');
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot);
+  } else { boot(); }
+
+  /* measure() recomputes active steps immediately. The editor calls it after
+     jumping the preview to a block, so the right graphic shows without waiting
+     for a frame. */
+  function measureAll() {
+    for (var i = 0; i < scrollies.length; i++) scrollies[i].measure();
+  }
+
+  window.StoryRuntime = {
+    boot: boot, teardown: teardown, measure: measureAll, Chart: Chart
+  };
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1700 1150" width="1700" height="1150">
+<rect width="1700" height="1150" fill="#111013"/>
+<text x="90" y="105" font-family="Georgia,serif" font-size="62" font-weight="700" fill="#e8e6e1">2001 – 2008</text>
+<text x="90" y="152" font-family="Helvetica,Arial" font-size="28" fill="#8b8781">The densest stretch on record · 7 entries</text>
+<line x1="90" y1="192" x2="1610" y2="192" stroke="rgba(232,230,225,0.15)" stroke-width="2"/>
+
+<text x="90" y="258" font-family="Helvetica,Arial" font-size="25" font-weight="700" fill="#b8553a" letter-spacing="1.5">26 JAN 2001</text>
+<text x="290" y="258" font-family="Georgia,serif" font-size="34" font-weight="600" fill="#e8e6e1">Gujarat earthquake</text>
+<text x="290" y="292" font-family="Helvetica,Arial" font-size="23" fill="#8b8781">Kutch, India</text>
+<rect x="748.2" y="234" width="57.2" height="26" fill="#b8553a" rx="3" opacity="0.85"/>
+<text x="821.4" y="257" font-family="Helvetica,Arial" font-size="28" font-weight="600" fill="#e8e6e1">20,000</text>
+<text x="90" y="359.42857142857144" font-family="Helvetica,Arial" font-size="25" font-weight="700" fill="#b8553a" letter-spacing="1.5">26 MAR 2002</text>
+<text x="290" y="359.42857142857144" font-family="Georgia,serif" font-size="34" font-weight="600" fill="#e8e6e1">Afghanistan earthquakes</text>
+<text x="290" y="393.42857142857144" font-family="Helvetica,Arial" font-size="23" fill="#8b8781">Baghlan, Afghanistan</text>
+<rect x="748.2" y="335.42857142857144" width="5.1" height="26" fill="#b8553a" rx="3" opacity="0.85"/>
+<text x="769.3" y="358.42857142857144" font-family="Helvetica,Arial" font-size="28" font-weight="600" fill="#e8e6e1">1,800</text>
+<text x="90" y="460.8571428571429" font-family="Helvetica,Arial" font-size="25" font-weight="700" fill="#b8553a" letter-spacing="1.5">26 DEC 2003</text>
+<text x="290" y="460.8571428571429" font-family="Georgia,serif" font-size="34" font-weight="600" fill="#e8e6e1">Bam earthquake</text>
+<text x="290" y="494.8571428571429" font-family="Helvetica,Arial" font-size="23" fill="#8b8781">Bam, Iran</text>
+<rect x="748.2" y="436.8571428571429" width="88.6" height="26" fill="#b8553a" rx="3" opacity="0.85"/>
+<text x="852.8" y="459.8571428571429" font-family="Helvetica,Arial" font-size="28" font-weight="600" fill="#e8e6e1">31,000</text>
+<text x="90" y="562.2857142857142" font-family="Helvetica,Arial" font-size="25" font-weight="700" fill="#b8553a" letter-spacing="1.5">26 DEC 2004</text>
+<text x="290" y="562.2857142857142" font-family="Georgia,serif" font-size="34" font-weight="600" fill="#e8e6e1">Indian Ocean tsunami</text>
+<text x="290" y="596.2857142857142" font-family="Helvetica,Arial" font-size="23" fill="#8b8781">Off Sumatra, Indonesia</text>
+<rect x="748.2" y="538.2857142857142" width="651.8" height="26" fill="#b8553a" rx="3" opacity="0.85"/>
+<text x="1416.0" y="561.2857142857142" font-family="Helvetica,Arial" font-size="28" font-weight="600" fill="#e8e6e1">228,000</text>
+<text x="90" y="663.7142857142858" font-family="Helvetica,Arial" font-size="25" font-weight="700" fill="#b8553a" letter-spacing="1.5">26 JUL 2005</text>
+<text x="290" y="663.7142857142858" font-family="Georgia,serif" font-size="34" font-weight="600" fill="#e8e6e1">Maharashtra floods</text>
+<text x="290" y="697.7142857142858" font-family="Helvetica,Arial" font-size="23" fill="#8b8781">Mumbai, India</text>
+<rect x="748.2" y="639.7142857142858" width="3.1" height="26" fill="#b8553a" rx="3" opacity="0.85"/>
+<text x="767.3" y="662.7142857142858" font-family="Helvetica,Arial" font-size="28" font-weight="600" fill="#e8e6e1">1,094</text>
+<text x="90" y="765.1428571428571" font-family="Helvetica,Arial" font-size="25" font-weight="700" fill="#b8553a" letter-spacing="1.5">26 MAY 2006</text>
+<text x="290" y="765.1428571428571" font-family="Georgia,serif" font-size="34" font-weight="600" fill="#e8e6e1">Yogyakarta earthquake</text>
+<text x="290" y="799.1428571428571" font-family="Helvetica,Arial" font-size="23" fill="#8b8781">Java, Indonesia</text>
+<rect x="748.2" y="741.1428571428571" width="16.3" height="26" fill="#b8553a" rx="3" opacity="0.85"/>
+<text x="780.5" y="764.1428571428571" font-family="Helvetica,Arial" font-size="28" font-weight="600" fill="#e8e6e1">5,700</text>
+<text x="90" y="866.5714285714286" font-family="Helvetica,Arial" font-size="25" font-weight="700" fill="#d9a441" letter-spacing="1.5">26 NOV 2008</text>
+<text x="290" y="866.5714285714286" font-family="Georgia,serif" font-size="34" font-weight="600" fill="#e8e6e1">Mumbai terror attacks</text>
+<text x="290" y="900.5714285714286" font-family="Helvetica,Arial" font-size="23" fill="#8b8781">Mumbai, India</text>
+<rect x="748.2" y="842.5714285714286" width="3.0" height="26" fill="#d9a441" rx="3" opacity="0.85"/>
+<text x="767.2" y="865.5714285714286" font-family="Helvetica,Arial" font-size="28" font-weight="600" fill="#e8e6e1">166</text>
+<line x1="90" y1="1045" x2="1610" y2="1045" stroke="rgba(232,230,225,0.15)" stroke-width="2"/><rect x="1184.4" y="1036" width="152.0" height="18" fill="#d9a441" opacity="0.20" rx="3"/><circle cx="120.4" cy="1045" r="3.5" fill="rgba(232,230,225,0.28)"/><circle cx="150.8" cy="1045" r="3.5" fill="rgba(232,230,225,0.28)"/><circle cx="257.2" cy="1045" r="3.5" fill="rgba(232,230,225,0.28)"/><circle cx="302.8" cy="1045" r="3.5" fill="rgba(232,230,225,0.28)"/><circle cx="318.0" cy="1045" r="3.5" fill="rgba(232,230,225,0.28)"/><circle cx="622.0" cy="1045" r="3.5" fill="rgba(232,230,225,0.28)"/><circle cx="926.0" cy="1045" r="3.5" fill="rgba(232,230,225,0.28)"/><circle cx="971.6" cy="1045" r="3.5" fill="rgba(232,230,225,0.28)"/><circle cx="986.8" cy="1045" r="3.5" fill="rgba(232,230,225,0.28)"/><circle cx="1032.4" cy="1045" r="3.5" fill="rgba(232,230,225,0.28)"/><circle cx="1047.6" cy="1045" r="3.5" fill="rgba(232,230,225,0.28)"/><circle cx="1199.6" cy="1045" r="6" fill="#b8553a"/><circle cx="1214.8" cy="1045" r="6" fill="#b8553a"/><circle cx="1230.0" cy="1045" r="6" fill="#b8553a"/><circle cx="1245.2" cy="1045" r="6" fill="#b8553a"/><circle cx="1260.4" cy="1045" r="6" fill="#b8553a"/><circle cx="1275.6" cy="1045" r="6" fill="#b8553a"/><circle cx="1306.0" cy="1045" r="6" fill="#d9a441"/><circle cx="1412.4" cy="1045" r="3.5" fill="rgba(232,230,225,0.28)"/><circle cx="1503.6" cy="1045" r="3.5" fill="rgba(232,230,225,0.28)"/><circle cx="1534.0" cy="1045" r="3.5" fill="rgba(232,230,225,0.28)"/><circle cx="1579.6" cy="1045" r="3.5" fill="rgba(232,230,225,0.28)"/><text x="120.4" y="1083" text-anchor="middle" font-family="Helvetica,Arial" font-size="21" fill="#8b8781">1930</text><text x="424.4" y="1083" text-anchor="middle" font-family="Helvetica,Arial" font-size="21" fill="#8b8781">1950</text><text x="728.4" y="1083" text-anchor="middle" font-family="Helvetica,Arial" font-size="21" fill="#8b8781">1970</text><text x="1032.4" y="1083" text-anchor="middle" font-family="Helvetica,Arial" font-size="21" fill="#8b8781">1990</text><text x="1336.4" y="1083" text-anchor="middle" font-family="Helvetica,Arial" font-size="21" fill="#8b8781">2010</text><text x="1579.6" y="1083" text-anchor="middle" font-family="Helvetica,Arial" font-size="21" fill="#8b8781">2026</text>
+<text x="90" y="1122" font-family="Helvetica,Arial" font-size="20" fill="#8b8781">Bar length is linear, scaled to the largest entry shown. Source: PTI, 31 August 2026.</text>
+</svg>
