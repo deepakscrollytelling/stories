@@ -551,8 +551,8 @@
 
 .st-units__viewport { position: relative; overflow: hidden; min-height: 0; }
 .st-units__track { position: absolute; inset: 0; }
-.st-units__svg { display: block; }
-.st-units__cam { transition: transform 120ms linear; }
+.st-units__svg { display: block; width: 100%; height: 100%; }
+.st-units__cam { /* camera is the viewBox; nothing to transition here */ }
 
 .st-units__dots { fill: var(--fg-muted); }
 .st-units__grp {
@@ -746,6 +746,23 @@
 .st-units__seedcap { text-align: center; }
 @media (max-width: 640px) {
   .st-units__label strong { font-size: 12px; }
+}
+
+/* ---------------------------------------------------------------------------
+   Map labels — ours, not Leaflet tooltips, so they can be laid out without
+   colliding. Anything that cannot be fitted is left out rather than stacked.
+   --------------------------------------------------------------------------- */
+.st-map__labels { position: absolute; inset: 0; z-index: 600; pointer-events: none; }
+.st-map__label {
+  position: absolute; left: 0; top: 0; visibility: hidden;
+  font-family: var(--font-ui); font-size: 11.5px; font-weight: 600;
+  line-height: 1.35; white-space: nowrap;
+  color: #14161a; background: rgba(248,247,244,0.94);
+  padding: 2px 7px; border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.35);
+}
+@media (max-width: 640px) {
+  .st-map__label { font-size: 10px; padding: 1px 5px; }
 }
 
 </style>
@@ -1520,13 +1537,20 @@
       inner.style.cssText = 'width:100%;height:100%';
       holder.appendChild(inner);
 
-      /* Every free tile source asks for credit; show whichever applies. */
+      /* Labels are ours, not Leaflet tooltips: permanent tooltips have no
+         collision handling, so a zoomed-out map ends up with names stacked on
+         top of each other. */
+      var labelLayer = document.createElement('div');
+      labelLayer.className = 'st-map__labels';
+      holder.appendChild(labelLayer);
+
       var attrib = document.createElement('div');
       attrib.className = 'st-map__attrib';
       attrib.innerHTML = spec.attrib || 'Imagery &copy; Esri, Maxar, Earthstar Geographics';
       holder.appendChild(attrib);
 
-      var map = null, markers = [];
+      var map = null, markers = [], labels = [], wanted = [];
+
       function ensure() {
         if (map || typeof L === 'undefined') return map;
         map = L.map(inner, {
@@ -1542,38 +1566,105 @@
           { maxZoom: 19, crossOrigin: true }).addTo(map);
         map.setView(spec.center || [20, 0], spec.zoom || 2);
 
-        /* The sticky graphic changes size with the window, and in the editor
-           with the device preview. Leaflet needs telling each time. */
-        var ro = new ResizeObserver(function () { if (map) map.invalidateSize(false); });
+        map.on('move zoom moveend zoomend', placeLabels);
+
+        var ro = new ResizeObserver(function () { if (map) { map.invalidateSize(false); placeLabels(); } });
         ro.observe(inner);
 
+        /* A map built inside a panel that is not on screen yet measures itself
+           as zero and loads a single tile. Nudge it when it first becomes
+           visible, and again shortly after, so the first slide is not blank. */
+        var io = new IntersectionObserver(function (es) {
+          es.forEach(function (e) {
+            if (!e.isIntersecting || !map) return;
+            map.invalidateSize(false);
+            placeLabels();
+          });
+        }, { rootMargin: '200px' });
+        io.observe(holder);
+
+        [0, 60, 250, 700].forEach(function (d) {
+          setTimeout(function () { if (map) { map.invalidateSize(false); placeLabels(); } }, d);
+        });
+
         keep({ disconnect: function () {
-          ro.disconnect();
+          ro.disconnect(); io.disconnect();
           if (map) { map.remove(); map = null; }
         } });
         return map;
       }
 
+      /* Place each label beside its marker, trying four positions and dropping
+         any that cannot be fitted without covering another. */
+      function placeLabels() {
+        if (!map) return;
+        var size = map.getSize();
+        var taken = [];
+        for (var i = 0; i < labels.length; i++) {
+          var el = labels[i], pt;
+          try { pt = map.latLngToContainerPoint(wanted[i].latlng); } catch (e) { continue; }
+          el.style.visibility = 'hidden';
+          var w = el.offsetWidth || 70, h = el.offsetHeight || 18;
+          var tries = [
+            [pt.x + 11, pt.y - h / 2],
+            [pt.x - 11 - w, pt.y - h / 2],
+            [pt.x - w / 2, pt.y - 13 - h],
+            [pt.x - w / 2, pt.y + 13]
+          ];
+          var put = null;
+          for (var t = 0; t < tries.length; t++) {
+            var bx = tries[t][0], by = tries[t][1];
+            if (bx < 2 || by < 2 || bx + w > size.x - 2 || by + h > size.y - 2) continue;
+            var hit = false;
+            for (var k = 0; k < taken.length; k++) {
+              var o = taken[k];
+              if (bx < o.r && bx + w > o.l && by < o.b && by + h > o.t) { hit = true; break; }
+            }
+            if (!hit) { put = [bx, by]; break; }
+          }
+          if (!put) continue;                       /* stays hidden */
+          el.style.left = put[0].toFixed(1) + 'px';
+          el.style.top = put[1].toFixed(1) + 'px';
+          el.style.visibility = 'visible';
+          taken.push({ l: put[0], t: put[1], r: put[0] + w, b: put[1] + h });
+        }
+      }
+
+      function setMarkers(list) {
+        markers.forEach(function (mk) { map.removeLayer(mk); });
+        markers = []; labels = []; wanted = [];
+        labelLayer.innerHTML = '';
+        list.forEach(function (pt) {
+          var icon = L.divIcon({ className: '', html: '<div class="st-map__marker"></div>', iconSize: [14, 14], iconAnchor: [7, 7] });
+          markers.push(L.marker([pt.lat, pt.lng], { icon: icon }).addTo(map));
+          wanted.push({ latlng: L.latLng(pt.lat, pt.lng) });
+          var el = document.createElement('span');
+          el.className = 'st-map__label';
+          el.textContent = pt.label || '';
+          if (!pt.label) el.style.display = 'none';
+          labelLayer.appendChild(el);
+          labels.push(el);
+        });
+        placeLabels();
+      }
+
+      /* Build it now rather than on first use, so the opening slide has a map. */
+      ensure();
+
       return {
         el: holder,
-        setState: function (s) {
+        setState: function (st) {
           var m = ensure();
           if (!m) return;
-          setTimeout(function () { m.invalidateSize(); }, 30);
-          markers.forEach(function (mk) { m.removeLayer(mk); });
-          markers = [];
-          ((s && s.markers) || spec.markers || []).forEach(function (pt) {
-            var icon = L.divIcon({ className: '', html: '<div class="st-map__marker"></div>', iconSize: [14, 14], iconAnchor: [7, 7] });
-            var mk = L.marker([pt.lat, pt.lng], { icon: icon }).addTo(m);
-            if (pt.label) mk.bindTooltip(pt.label, { permanent: true, direction: 'right', offset: [10, 0], className: 'st-map__tip' });
-            markers.push(mk);
-          });
-          var c = (s && s.center) || spec.center || [20, 0];
-          var z = (s && s.zoom != null) ? s.zoom : (spec.zoom || 2);
+          m.invalidateSize(false);
+          setMarkers((st && st.markers) || spec.markers || []);
+          var c = (st && st.center) || spec.center || [20, 0];
+          var z = (st && st.zoom != null) ? st.zoom : (spec.zoom || 2);
           if (reduceMotion) m.setView(c, z, { animate: false });
           else m.flyTo(c, z, { duration: 1.5, easeLinearity: 0.22 });
+          setTimeout(placeLabels, 60);
         },
-        resize: function () { if (map) map.invalidateSize(); }
+        resize: function () { if (map) { map.invalidateSize(false); placeLabels(); } }
       };
     }
 
@@ -1650,7 +1741,18 @@
 
         var pitch = 14;                              // base, before zoom
         var dot   = spec.dotSize || 10.5;
-        var rows  = narrow ? 14 : 18;
+        /* Row count comes from the largest entry, so its block lands roughly
+           square. Too few rows and the biggest entry becomes a long thin strip
+           that shrinks to a smear on a phone; too many and the small entries
+           are all one column anyway. */
+        var maxDots = 1;
+        for (var m = 0; m < items.length; m++) {
+          maxDots = Math.max(maxDots, Math.round(items[m].value / perDot));
+        }
+        /* Deliberately wider than tall. A square block fills the frame's height
+           exactly, which pins the zoom — the closing pull-back then has nowhere
+           to go and does not read as a pull-back at all. */
+        var rows = Math.max(8, Math.min(40, Math.round(Math.sqrt(maxDots) * 0.62)));
 
         var gap = 90;                                 // base gap between blocks
         var x = 0;
@@ -1674,18 +1776,27 @@
         var B = laid.blocks;
         var a = Math.max(0, i - (backTo == null ? 1 : backTo));
         var pad = laid.gap * 0.6;
-        return { l: B[a].x - pad, r: B[i].x + B[i].w + pad };
+        /* Height is bounded by the tallest block actually in this frame, not by
+           the tallest in the chart — otherwise the opening entry, one dot high,
+           is shrunk to fit a block that is not on screen yet. */
+        var tall = 1;
+        for (var k = a; k <= i; k++) tall = Math.max(tall, Math.min(laid.rows, B[k].dots));
+        return { l: B[a].x - pad, r: B[i].x + B[i].w + pad, rows: tall };
       }
       function camera(f) {
         var span = Math.max(1, f.r - f.l);
         var maxScale = (laid.narrow ? 44 : 58) / laid.dot;      // biggest a dot gets
-        var s = Math.min(laid.vw / span, maxScale);
-        /* When the span is small enough that the cap bites, centre it instead. */
-        var tx = (laid.vw - span * s) / 2 - f.l * s;
-        if (span * s > laid.vw) tx = -f.l * s;
-        return { s: s, tx: tx };
+        /* Bounded by the frame's height as well as its width, or a tall block
+           would run off the top and bottom once it is wide enough to fit. */
+        var fitH = laid.fieldH / Math.max(1, (f.rows || laid.rows) * laid.pitch);
+        var s = Math.min(laid.vw / span, fitH, maxScale);
+        /* Left edge in base coordinates. When the cap bites, the span no longer
+           fills the frame, so centre it. */
+        var vbW = laid.vw / s;
+        var minX = (vbW > span) ? f.l - (vbW - span) / 2 : f.l;
+        return { s: s, minX: minX };
       }
-      function lerpCam(a, b, t) { return { s: lerp(a.s, b.s, t), tx: lerp(a.tx, b.tx, t) }; }
+      function lerpCam(a, b, t) { return { s: lerp(a.s, b.s, t), minX: lerp(a.minX, b.minX, t) }; }
 
       /* ------------------------------------------------------------ timeline */
       function buildPlan(L) {
@@ -1719,9 +1830,9 @@
           if (sg.kind === 'move')     return { cam: lerpCam(camera(frameFor(sg.i)), camera(frameFor(sg.i + 1)), t),
                                                idx: sg.i + (t > 0.55 ? 1 : 0), intro: 1 };
           if (sg.kind === 'settle')   return { cam: camera(frameFor(n - 1)), idx: n - 1, intro: 1 };
-          if (sg.kind === 'pullback') return { cam: lerpCam(camera(frameFor(n - 1)), camera(frameFor(n - 1, 3)), t),
+          if (sg.kind === 'pullback') return { cam: lerpCam(camera(frameFor(n - 1)), camera(frameFor(n - 1, 4)), t),
                                                idx: n - 1, intro: 1, wide: t };
-          return { cam: camera(frameFor(n - 1, 3)), idx: n - 1, intro: 1, wide: 1 };
+          return { cam: camera(frameFor(n - 1, 4)), idx: n - 1, intro: 1, wide: 1 };
         }
         return { cam: camera(frameFor(0)), idx: 0, intro: 1 };
       }
@@ -1739,22 +1850,25 @@
 
         var svg = document.createElementNS(NS, 'svg');
         svg.setAttribute('class', 'st-units__svg');
-        svg.setAttribute('width', laid.vw);
-        svg.setAttribute('height', laid.vh);
+        svg.setAttribute('preserveAspectRatio', 'none');
         svg.setAttribute('viewBox', '0 0 ' + laid.vw + ' ' + laid.vh);
-        svg.style.overflow = 'visible';
 
         var g = document.createElementNS(NS, 'g');
         g.setAttribute('class', 'st-units__cam');
         svg.appendChild(g);
 
-        var colsH = laid.rows * laid.pitch;
         laid.blocks.forEach(function (b, bi) {
           var r = laid.dot / 2, pts = '';
+          /* Centre each block on the rows IT uses, not on the tallest block in
+             the chart. Centring a single dot inside a 41-row column puts it at
+             the top of that column, which at the opening zoom is well above the
+             frame — the dots were being drawn off-screen. */
+          var used = Math.min(laid.rows, b.dots);
+          var half = used * laid.pitch / 2;
           for (var d = 0; d < b.dots; d++) {
             var col = Math.floor(d / laid.rows), row = d % laid.rows;
             var cx = (b.x + col * laid.pitch + r).toFixed(1);
-            var cy = (row * laid.pitch + r - colsH / 2).toFixed(1);   // centred on 0
+            var cy = (row * laid.pitch + r - half).toFixed(1);
             pts += 'M' + cx + ' ' + cy + 'm' + (-r) + ' 0a' + r + ' ' + r + ' 0 1 0 ' + (r * 2) + ' 0a' + r + ' ' + r + ' 0 1 0 ' + (-r * 2) + ' 0';
           }
           var grp = document.createElementNS(NS, 'g');
@@ -1793,13 +1907,49 @@
       /* ------------------------------------------------------------- scroll */
       function update() {
         if (!laid || !plan || !svgEl) return;
+
+        /* Re-read the frame every time. Deriving the viewBox from measurements
+           taken at paint time let the two drift apart, and with
+           preserveAspectRatio="none" that stretches the dots and pushes tall
+           blocks out of the frame. */
+        var lw = viewport.clientWidth, lh = viewport.clientHeight;
+        if (lw > 0 && lh > 0) {
+          laid.vw = lw; laid.vh = lh;
+          laid.fieldH = Math.max(70, lh - laid.bandH - 8);
+          laid.fieldCY = laid.bandH + laid.fieldH / 2;
+        }
+
         var rect = block.getBoundingClientRect();
         var px = clamp(-rect.top, 0, plan.total);
         var r = resolve(px);
         var cam = r.cam;
 
-        svgEl.cam.setAttribute('transform',
-          'translate(' + cam.tx.toFixed(2) + ',' + laid.fieldCY.toFixed(1) + ') scale(' + cam.s.toFixed(4) + ')');
+        /* Safety net. Between two stops the zoom is interpolated, and the
+           in-between value can be too close for whichever block is tallest in
+           frame — it then runs off the top and bottom. Clamp to whatever
+           actually fits, keeping the frame centred where it was. */
+        var vbW0 = laid.vw / cam.s;
+        var tallest = 1;
+        for (var bi = 0; bi < laid.blocks.length; bi++) {
+          var bk = laid.blocks[bi];
+          if (bk.x + bk.w < cam.minX || bk.x > cam.minX + vbW0) continue;
+          tallest = Math.max(tallest, Math.min(laid.rows, bk.dots));
+        }
+        var maxS = laid.fieldH / (tallest * laid.pitch);
+        if (cam.s > maxS) {
+          var cx = cam.minX + vbW0 / 2;
+          cam = { s: maxS, minX: cx - (laid.vw / maxS) / 2 };
+        }
+
+        /* The camera is the viewBox, not a transform. A `transform` presentation
+           attribute on the group was being dropped — the dots rendered
+           unscaled at the origin, just off the top of the frame — and the
+           viewBox has no CSS cascade to lose to. */
+        var vbW = laid.vw / cam.s;
+        var vbH = laid.vh / cam.s;
+        var minY = -laid.fieldCY / cam.s;         // puts base y=0 at fieldCY on screen
+        svgEl.svg.setAttribute('viewBox',
+          cam.minX.toFixed(2) + ' ' + minY.toFixed(2) + ' ' + vbW.toFixed(2) + ' ' + vbH.toFixed(2));
         if (railbar) railbar.style.width = (px / plan.total * 100).toFixed(2) + '%';
 
         if (r.idx !== shown) {
@@ -1830,7 +1980,7 @@
           var on = (i >= showFrom && i <= current) && r.intro >= 1 && !r.wide;
           if (!on) { el.classList.remove('is-in', 'is-active'); continue; }
           var b = laid.blocks[i];
-          var left = cam.tx + b.x * cam.s;
+          var left = (b.x - cam.minX) * cam.s;
           var wide = Math.max(b.w * cam.s, 90);
           el.style.left = Math.max(4, Math.min(left, laid.vw - 150)).toFixed(1) + 'px';
           el.style.width = Math.min(Math.max(wide, 110), laid.narrow ? 170 : 240).toFixed(1) + 'px';
@@ -1844,7 +1994,7 @@
           var q = r.intro;
           if (q < 1) {
             var b0 = laid.blocks[0];
-            var toX = cam.tx + (b0.x + laid.dot / 2) * cam.s;
+            var toX = (b0.x + laid.dot / 2 - cam.minX) * cam.s;
             var toY = laid.fieldCY;
             var e = q * q * (3 - 2 * q);
             var rad = lerp(laid.narrow ? 44 : 60, (laid.dot / 2) * cam.s, e);
@@ -1856,7 +2006,7 @@
             var cap = $('.st-units__seedcap', block);
             if (cap) {
               cap.style.opacity = (1 - Math.min(1, q * 1.6)).toFixed(2);
-              cap.style.top = (cy + rad + (laid.narrow ? 34 : 42)) + 'px';
+              cap.style.top = (cy + rad + (laid.narrow ? 46 : 52)) + 'px';
             }
             svgEl.svg.style.opacity = e.toFixed(2);
             if (nowEl) nowEl.style.opacity = Math.max(0, (q - 0.65) / 0.35).toFixed(2);
